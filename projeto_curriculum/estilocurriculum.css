@@ -35,12 +35,32 @@ a {
     text-decoration: none;
     color: rgb(4, 4, 186);
 }
+.menu {
+    text-align: right;
+}
+.menu li {
+    background-color: rgba(128, 128, 128, 0.555);
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0px;
+}
+.menu a {
+    padding: 16px;
+    display: inline-block;
+}
 .center{
     text-align: center;
 }
 a:visited {
     text-decoration: none;
+    
 }
 a:hover {
     text-decoration: underline;
+}
+.menu a:hover {
+    background-color:rgba(4, 4, 186, 0.408);
+    color: white;
+
 }
