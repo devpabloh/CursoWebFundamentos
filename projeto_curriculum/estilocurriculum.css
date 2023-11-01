@@ -35,6 +35,9 @@ a {
     text-decoration: none;
     color: rgb(4, 4, 186);
 }
+.center{
+    text-align: center;
+}
 a:visited {
     text-decoration: none;
 }
