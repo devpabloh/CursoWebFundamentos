@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body {
+    background-color: rgba(128, 128, 128, 0.574);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-image: url(ProjetoCSS-inicio/imagens/bg-3.jpg);
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 400px; 
+}
+header h1{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    margin-top: 0px;
+}
+div h2 {
+    text-align: center;
+    color: white;
+}
+ul {
+    text-overflow: none;
+    list-style-type: none;
+}
+li {
+    display: inline-block; 
+    background-color: #808080;
+    border-radius: 10px;
+    border: 2px solid white;
+    
+}
+a{
+    text-decoration: none;
+    padding: 30px;
+    display: inline-block;
+    color: white;
+}
+
+main {
+    background-color: white;
+    margin: 60px;
+}
+article {
+    border: 10px solid  rgba(128, 128, 128, 0.574);
+    padding: 20px;
+}
+main h2 {
+    background-color: #80808089;
+    margin: 10px;
+    text-indent: 10px;
+}
+main p {
+    text-align: justify;
+    text-indent: 10px;
+    margin: 10px;
+}
+main a {
+    color: blue;
+    text-decoration: underline;
+    background-color: rgba(128, 128, 128, 0.614);
+    border-radius: 10px;
+    padding: 10px;
+}
+footer {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+}
+a:hover {
+    text-decoration: underline;
+}
