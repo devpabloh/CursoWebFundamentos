@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de posicao</title>
+    <style>
+        #container {
+            border: 2px solid black;
+            width: 500px;
+            position: static;
+        }
+        #container div{
+            margin: 5px;
+            border: 2px solid blue;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+        }
+        #container .div2 {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+    </div>
+    
+</body>
+</html>
