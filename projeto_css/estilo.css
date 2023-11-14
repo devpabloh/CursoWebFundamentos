@@ -11,7 +11,7 @@ body {
 
     background-color: #ccc;
     background-image: url(imagens/bg-2.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 .hero {
@@ -29,229 +29,37 @@ body {
     text-transform: uppercase;
     font-size: 56px;
     text-shadow: 2px 2px 2px black;
+    margin-bottom: 0px;
 }
 
 .hero-content p {
     background-color:rgba(0, 0, 0, .7);
     font-size: 18px;
-    padding: auto;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    padding: 16px;
+    display: inline-block;
     color: white;
     border-bottom: 2px solid white;
+}
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    margin: auto;
+    gap: 16px;
+    padding: 16px;
+    background-color: white;
+}
+.card {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+.card p {
+    background-color: #393535;
+    color: white;
+    padding: 8px;
+    margin: 0;
 }
