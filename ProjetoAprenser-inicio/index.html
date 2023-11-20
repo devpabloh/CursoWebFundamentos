@@ -6,47 +6,90 @@
     <meta name="keywords" content="">
     <meta name="author" content="Pablo Henrique Ferreira de Franca">
     <title>Projeto Aprenser</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <section class="flex-container__header">
-            <img src="imagens/logoAprenser.png" alt="">
-            <ul class="flex-container__menu">
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Nossa Escola</a></li>
-                <li><a href="#">Contatos</a></li>
-            </ul>
+    <header class="wrappercontainer-dark">
+        <section class="header container">
+            <img src="imagens/logoAprenser.png" alt="aprenser">
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#escola">Nossa Escola</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
         </section>
     </header>
     <main>
-        <section class="container-main">
-            <article>   
-                <h1>O saber é o que transforma nosso SER</h1>
-                <a href="#">Saiba mais</a>
+        <section class="wrappercontainer wrappercontainer-hero">
+            <article class="container heroBanner">   
+                <div class="header_content">
+                    <h1 class="hero_title">O saber é o que transforma nosso <spam class="uppercase">ser</spam></h1>
+                    <a href="#" class="btn section_btn">Saiba mais</a>
+                </div>
                 <img src="imagens/HeroImage.png" alt="">
             </article>
         </section>
-        <section>
-            <title>Principais Cursos</title>
-            <article>
-                <img src="imagens/curso-design.png" alt="Curso de design">
-                <h2>Design para Web</h2>
-                <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+        <section class=" wrappercontainer wrappercontainer-light">
+            <article id="cursos" class="cursos container">
+                <h2 class="section_title">Principais Cursos</h2>
+                <div class="cursoscontainer">
+                    <div class="curso_card">
+                        <img src="imagens/curso-design.png" alt="Curso de design">
+                        <div class="cursos_card_content">
+                            <h3>Design para Web</h3>
+                            <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                        </div>
+                    </div>
+                    <div class="curso_card">
+                        <img src="imagens/curso-design-1.png" alt="Curso front-end">
+                        <div class="cursos_card_content">
+                            <h3>Front End Developer</h3>
+                            <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares.</p>
+                        </div>
+                    </div>
+                    <div class="curso_card">
+                        <img src="imagens/curso-design-2.png" alt="Curso back end">
+                        <div class="cursos_card_content">
+                            <h3>Back End Developer</h3>
+                            <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                        </div>
+                    </div>
+                </div>
             </article>
-            <article>
-                <img src="imagens/curso-design-1.png" alt="Front end developer">
-                <h2>Front End Developer</h2>
-                <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
-            </article>
-            <article>
-                <img src="imagens/curso-design-2.png" alt="Back end developer">
-                <h2>Back End Developer</h2>
-                <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
-            </article>
-            <a href="#">Ver mais cursos</a>
+            <div class="vermais"><a href="#" class="btn section_btn">Ver mais cursos</a></div>
+        </section>
+        <section class="wrappercontainer wrappercontainer-dark2">
+            <div class="container escola" id="escola">
+                <img src="imagens/nossa-escola.png" alt="mulher demonstrando felicidade">
+                <div class="escola_content">
+                    <h2 class="escola_title">Nossa escola</h2>
+                    <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="wrappercontainer wrappercontainer-light">
+            <div class="container" id="contatos">
+                <h2 class="section_title">Contatos</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112243.22702370372!2d-52.89730345963491!3d-28.461446553027816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd492498d6957f%3A0x9a8b601ccba4050d!2sN%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-PT!2sbr!4v1700481344857!5m2!1spt-PT!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <address class="contatos_address">
+                    <p>Av. da Liberdade, 1001</p>
+                    <p>Tel.: +351 21 123 456</p>
+                    <p>E-mail: contato@aprenser.com</p>
+                </address>
+            </div>
         </section>
     </main>
     
+    <div class="wrappercontainer wrappercontainer-dark">
+        <footer
+        class="footer"> Desenvolvido por Pablo Henrique</footer>
+    </div>
 </body>
 </html>
