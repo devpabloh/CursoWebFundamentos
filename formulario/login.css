@@ -1,0 +1,30 @@
+@charset "UTF-8";
+html {
+    background-color: #95a5a6;
+    font-family: "helvetica neue", arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+form {
+    width: 21.875em;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+
+}
+fieldset{
+    border: none;
+
+}
+input,
+label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
