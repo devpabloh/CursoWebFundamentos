@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body{
+            padding-bottom: 100vh;
+        }
+        textarea {
+            resize: none ;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -56,13 +64,57 @@
                     <input type="checkbox" name="interesse" value="java"> Java
                 </label>
                 
-                <select name="linguagem">
-                    <option value="html"></option>
-                </select>
-
+                <label> Escolha uma linguagem
+                    <select name="linguagem" required >
+                        <option value="">Selecione uma</option>
+                        
+                        <optgroup label="frontend">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javaScript">JavaScript</option>
+                        </optgroup>
+                        
+                        <optgroup label="backend">
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                        </optgroup>
+                    </select>
+                    <input type="text" list="linguagemlist">
+                    <datalist id="linguagemlist">
+                        <option value="HTML"></option>
+                        <option value="CSS"></option>
+                        <option value="Javascript"></option>
+                        <option value="Java"></option>
+                        <option value="Python"></option>
+                        <option value="PHP"></option>
+                    </datalist>
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="Mensagem" cols="30" rows="5" maxlength="10"></textarea>
         </fieldset>
         <input type="submit" value="Mandar">
+
+        <textarea cols="30" rows="10" disabled>
+Contrato de utilização das casas
+
+    1.1 Não possuir animais
+        </textarea>
+        <input type="file" name="" id="">
+        <label for="">
+            <input type="checkbox" value="mandar"> Li e concordo
+            
+        </label>
     </form>
-    
+
+    <input type="submit" value="mandar">
+    <input type="button" value="button">
+
+    <button type="submit"> <em>mandar com tag button</em></button>
+    <button> <b>botão</b></button>
+
+    <input type="search">
+    <input type="range" min="0" max="10" step="2">
 </body>
 </html>
