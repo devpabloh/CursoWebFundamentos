@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+html {
+    background-color: blue;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 2em 1em;
+    background-color: white;
+}
+
+form {
+    border: 2px solid black;
+    margin: auto;
+    width: 30%;
+    box-shadow: 2px 5px black;
+}
+.btn {
+    margin-top: 1em;
+}
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 2px;
+    border: none;
+    padding: 0.5em;
+}
