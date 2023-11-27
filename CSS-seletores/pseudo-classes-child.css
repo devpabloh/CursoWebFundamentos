@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+div :first-child {
+    color: red;
+}
+
+p:last-child{
+    color: orange;
+}
+
+p:nth-child(2) {
+    background-color: blue;
+}
+
+p:first-of-type{
+    background-color: green;
+}
+
+p:last-of-type { background-color: red;}
+
+li:nth-child(odd) {
+    background-color: red;
+}
+ul>li:nth-child(even) {
+    background-color: green;
+}
+
+ol:nth-child(2n) {
+    background-color: red;
+}
