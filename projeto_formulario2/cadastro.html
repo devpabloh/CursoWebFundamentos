@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="#" method="get" autocomplete="off" class="form">
+        <fieldset class="form__fieldset">
+            <legend class="form__title">Login</legend>
+
+            <label for="user" class="form__label">usuário</label>
+            <input type="text" name="user" id="user" required class="form__input">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required class="form__input">
+
+            <label for="key" class="form__label">Senha</label>
+            <input type="password" name="key" id="key" required class="form__input">
+
+            <div class="form__action">
+                
+                <input type="submit" value="cadastre-se" class="btn btn-primary">
+
+                <p class="form__action__aside"> já possui cadastro?
+                    <a href="index.html" class="form__action__link">
+                        Faça login</a>
+                </p>
+            </div>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
