@@ -42,11 +42,30 @@
         input[type="text"]:disabled {
             background-color: white;
         }
+        input[type="text"]::placeholder {
+            color: white;
+        }
+        input[type="text"]:placeholder-shown {
+            background-color: aqua;
+        }
+        p:only-child {
+            background-color: orangered;
+        }
+        p:read-write{
+            border-bottom: 2px solid red;
+        }
+        div:target {
+            border: 4px dashed red;
+        }
     </style>
 </head>
 <body>
-    <button>Vai</button> <br>
-    <button disabled>Vai disabled</button>
+    <div id="topo">
+        <a href="#titulo" target="_blank">Vai para o titulo</a>
+        <button>Vai</button> <br>
+        <button disabled>Vai disabled</button>
+    </div>
+    
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eos perspiciatis totam eaque reprehenderit quis ipsa! Similique unde illo eaque laborum, dolorem voluptatum dignissimos quae. Ab nulla porro deleniti et?</p>
     <p></p>
@@ -71,5 +90,17 @@
         <input type="text" placeholder="placeholder">
         <input type="text">
     </form>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p contenteditable>paragrafo editável</p>
+    </div>
+
+    <h1 id="titulo">titulo</h1>
 </body>
 </html>
