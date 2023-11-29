@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-classes</title>
+    <style>
+        button {
+            background-color: #ddd;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+        }
+        p:empty:before {
+            content: "paragrafo vazio??";
+        }
+        
+        a:hover, a:focus {
+            background-color: yellow;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+        input {
+            margin: 1em;
+        }
+        input[type="text"]:read-write {
+            background-color: #999;
+            border: none;
+            padding: 0.5em;
+        }
+        input[type="text"]:read-only {
+            background-color: yellow;
+        }
+        input[type="text"]:disabled {
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <button>Vai</button> <br>
+    <button disabled>Vai disabled</button>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eos perspiciatis totam eaque reprehenderit quis ipsa! Similique unde illo eaque laborum, dolorem voluptatum dignissimos quae. Ab nulla porro deleniti et?</p>
+    <p></p>
+
+    <ul>
+        <li> <a href="#">Link Falso</a></li>
+        <li> <a href="#">Link Falso</a></li>
+        <li> <a href="#">Link Falso</a></li>
+        <li> <a href="#">Link Falso</a></li>
+    </ul>
+
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <form action="#">
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor" disabled>
+        <input type="text" value="valor" readonly>
+        <input type="text" placeholder="placeholder">
+        <input type="text">
+    </form>
 </body>
 </html>
