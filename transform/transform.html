@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transformações 2D</title>
 </head>
+<style>
+    body {
+        margin-bottom: 100vh;
+    }
+    div {
+        outline: 1px solid #888;
+        width: 300px;
+        margin: .5em auto;
+    }
+    p {
+        width: 100%;
+    }
+    .destaque {
+        background-color: rgba(255, 255, 0, 0.619);
+    }
+    .div1 .destaque {
+        transform: translate(50%,50%);
+    }
+    .div2 .destaque {
+        position: relative;
+        left: 25%;
+        top: 50%;
+    }
+    .div3 .destaque {
+        transform: rotate(25deg);
+    }
+    .div4 .destaque{
+        transform: scale(.5, 2);
+    }
+    .div5 .destaque{
+        transform: skew(15deg);
+    }
+</style>
 <body>
     <p>Forma de transforma um elemento em suas coordenadas x e y</p>
     <p>Propriedades</p>
@@ -14,6 +47,35 @@
         <li>Scale: escalar um elemento, aumentar ou diminuir</li>
         <li>Skew: distorcer o elemento, no eixo X e Y</li>
     </ul>
-    
+    <div class="div1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium error eaque, incidunt tempore quidem nostrum magnam, nobis temporibus repudiandae dicta ipsa dolorem. Amet exercitationem veritatis in mollitia praesentium id nihil?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ab dolor libero, amet fuga error eaque tempora doloribus itaque provident veniam dolore! Enim deserunt alias ipsa, placeat ducimus maiores perferendis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi rem earum minima, vel architecto. Quidem, consequuntur necessitatibus dolorem fugiat rem optio ab provident suscipit placeat similique, veniam perspiciatis illum!</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium error eaque, incidunt tempore quidem nostrum magnam, nobis temporibus repudiandae dicta ipsa dolorem. Amet exercitationem veritatis in mollitia praesentium id nihil?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ab dolor libero, amet fuga error eaque tempora doloribus itaque provident veniam dolore! Enim deserunt alias ipsa, placeat ducimus maiores perferendis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi rem earum minima, vel architecto. Quidem, consequuntur necessitatibus dolorem fugiat rem optio ab provident suscipit placeat similique, veniam perspiciatis illum!</p>
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium error eaque, incidunt tempore quidem nostrum magnam, nobis temporibus repudiandae dicta ipsa dolorem. Amet exercitationem veritatis in mollitia praesentium id nihil?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ab dolor libero, amet fuga error eaque tempora doloribus itaque provident veniam dolore! Enim deserunt alias ipsa, placeat ducimus maiores perferendis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi rem earum minima, vel architecto. Quidem, consequuntur necessitatibus dolorem fugiat rem optio ab provident suscipit placeat similique, veniam perspiciatis illum!</p>
+    </div>
+
+    <div class="div4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium error eaque, incidunt tempore quidem nostrum magnam, nobis temporibus repudiandae dicta ipsa dolorem. Amet exercitationem veritatis in mollitia praesentium id nihil?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ab dolor libero, amet fuga error eaque tempora doloribus itaque provident veniam dolore! Enim deserunt alias ipsa, placeat ducimus maiores perferendis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi rem earum minima, vel architecto. Quidem, consequuntur necessitatibus dolorem fugiat rem optio ab provident suscipit placeat similique, veniam perspiciatis illum!</p>
+    </div>
+
+    <div class="div5">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium error eaque, incidunt tempore quidem nostrum magnam, nobis temporibus repudiandae dicta ipsa dolorem. Amet exercitationem veritatis in mollitia praesentium id nihil?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ab dolor libero, amet fuga error eaque tempora doloribus itaque provident veniam dolore! Enim deserunt alias ipsa, placeat ducimus maiores perferendis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi rem earum minima, vel architecto. Quidem, consequuntur necessitatibus dolorem fugiat rem optio ab provident suscipit placeat similique, veniam perspiciatis illum!</p>
+    </div>
+
 </body>
 </html>
