@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elemento has</title>
+    <style>
+        p a{
+            color: red;
+            background-color: yellow;
+        }
+        p:has(.teste) {
+            background-color: #ccc;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        th,td {
+            border-bottom: 1px solid #ddd;
+            padding: 0.5em;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+        tr:hover {
+            background-color: #e9e9e9;
+        }
+        tr:has(td:first-child input[type="checkbox"]:checked) {
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+<table>
+    <tr>
+        <th></th>
+        <th>Nome</th>
+        <th>E-mail</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>Jhon Doe</td>
+        <td>Johndoe@example.com</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>Jane Smith</td>
+        <td>Janesmith@example.com</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>Michael Johnson</td>
+        <td>michaeljohnson@example.com</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>Sarah Williams</td>
+        <td>sarahwilliams@example.com</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>David Brown</td>
+        <td>davidbrown@example.com</td>
+    </tr>
+</table>
+<hr>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ad, nisi neque cumque voluptates aliquam temporibus dicta fugit eius amet <a href="#">clique aqui para saber mais</a>recusandae itaque facilis ratione, quis voluptate quo repudiandae quasi corrupti.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ratione, eaque modi fugiat temporibus repellat vel dolore tenetur? Nulla, iusto commodi iure maxime consequatur maiores veniam suscipit nam modi minima?<a href="#" class="teste">clique aqui para saber mais</a></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel soluta quia distinctio excepturi, officia cumque aperiam fuga autem magni! Ullam, beatae. Nisi omnis neque fugit facere sit reprehenderit autem quam.</p>
+    
+</body>
+</html>
