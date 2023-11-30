@@ -86,15 +86,17 @@
 
         .switch {
             --switch-color: #cfd8dc;
+            --time: 0.2s;
         }
 
-        .switch span{
+        .switch span {
            display: inline-block; 
            width: 2em;
            height: 1em;
            border-radius: 1em;
            outline: 2px solid var(--switch-color);
-           overflow: hidden;
+           /*overflow: hidden;*/
+           position: relative;
         }
         
         .switch span::after {
@@ -106,6 +108,8 @@
             background-color: red;
             transition: transform 0.2s ease-in-out;
             transform: translate(0);
+            position: relative;
+            z-index: 1;
 
         }
         .switch input:checked+span::after {
@@ -118,6 +122,7 @@
             height: 100%;
             background-color: green;
             transform: translateX(-100%);
+            transition: transform var(--time) ease-in-out;
         }
 
         .switch input:checked+span::before {
@@ -132,6 +137,10 @@
             overflow: hidden;
             position: absolute;
             outline: none;
+        }
+        .switch input:focus + span {
+            outline: 2px solid black;
+            outline-offset: 2px;
         }
     </style>
 </head>
@@ -173,7 +182,9 @@
         <span></span>
         JavaScript
     </label>
+
     <hr>
+
     <label for="switch">
         <input type="checkbox">
         <span></span>
