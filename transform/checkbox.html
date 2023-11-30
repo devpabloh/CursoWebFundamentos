@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        .chk1[type="checkbox"] {
+            display: none;
+    
+        }
+        .chk1[type="checkbox"]+label span {
+            display: inline-block;
+            font-size: 16px;
+            width: 1em;
+            height: 1em;
+            background-color: white;
+            border: 2px solid black;
+            
+        }
+        .chk1[type="checkbox"]:checked + label span {
+            background-color: blue;
+            position: relative;
+
+        }
+
+        .chk1[type="checkbox"]:checked+label span::before {
+            content:"";
+            display: block;
+            border: .077em solid white;
+            position: absolute;
+            top: .077em;
+            left: 0.38em;
+            right: .3em;
+            bottom: .3em;
+            transform: rotate(45deg);
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+        .lbl2 span {
+            display: inline-block;
+            font-size: 20px;
+            width: 1em;
+            height: 1em;
+            background-color: red;
+            position: relative;
+            transition: background-color .2s;
+        }
+        .lbl2 input[type="checkbox"]:checked+span {
+            background-color: blue;
+            
+        }
+
+        .lbl2 input[type="checkbox"]+span::before {
+            content: "";
+            display: block;
+            border: 0.87em solid white;
+            position: absolute;
+            top: .077em;
+            left: 0.38em;
+            right: .3em;
+            bottom: .3em;
+            transform: rotate(45deg);
+            border-left-color: transparent;
+            border-top-color:transparent;
+            opacity: 0;
+            transition: opacity .5s;
+        } 
+        .lbl2 input[type="checkbox"]:checked+span::before {
+            opacity: 1;
+        }
+        .lbl2 input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checkbox</h1>
+
+    <input type="checkbox" id="html"  class="chk1">
+    <label for="html">
+        <span></span>
+        HTML
+    </label>
+
+    <input type="checkbox" id="css" class="chk1">
+    <label for="css">
+        <span></span>
+        CSS
+    </label>
+
+    <input type="checkbox" id="js" class="chk1">
+    <label for="js">
+        <span></span>
+        JS
+    </label>
+    <hr>
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        HTML
+    </label>
+
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        JavaScript
+    </label>
+</body>
+</html>
