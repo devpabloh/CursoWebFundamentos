@@ -5,12 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes</title>
     <style>
-       
+        .switch {
+            --switch-color: #cfd8dc;
+        }
+
+        .switch span{
+           display: inline-block; 
+           width: 2em;
+           height: 1em;
+           border-radius: 1em;
+           outline: 2px solid var(--switch-color);
+        }
+        
+        .switch span::after{
+            content: "";
+            display: block;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: red;
+        }
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum adipisci totam excepturi mollitia, ut voluptatem eos dolorum repellat, ipsam nihil cum iure nostrum corporis est ratione nesciunt, eligendi alias.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt aut accusamus facilis dolores minima at. Ipsam nihil quidem provident ratione dolores! Numquam, perspiciatis! Reprehenderit, est animi consectetur voluptates explicabo, repudiandae molestiae quae aut pariatur suscipit commodi blanditiis ipsam inventore atque.</p>
+    <h1>Checkbox</h1>
+    <label for="switch">
+        <input type="checkbox">
+        <span></span>
+        HTML
+    </label>
+
+    <label for="switch">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+
+    <label for="switch">
+        <input type="checkbox">
+        <span></span>
+        JavaScript
+    </label>
+
 </body>
 </html>
 
