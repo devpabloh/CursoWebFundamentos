@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
 
     <title>Projeto My Components</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +16,12 @@
 
 
 <body>
-    <header>
-        <div>
-            <div>
-                <img src="redes_sociais/pablo_camisaazullonga.png" alt="">
-            </div>
+    <header class="main-header">
+        <nav>
+            <a href="">
+                <img src="redes_sociais/pablo_camisaazullonga.png" alt="" class="perfil-img">
+            </a>
+            
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="tipografia.html">Tipográfia</a></li>
@@ -29,18 +31,19 @@
                 <li><a href="botoes.html">Botões</a></li>
                 <li><a href="tabelas.html">Tabelas</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <main>
+    <main class="main">
         <h1>My Component</h1>
-        <section>
-            <h2>A sua área para armazenar seus códigos HTML e CSS</h2>
-            <h3>Componentes criados por Pablo Henrique Ferreira de França para o curso da <a href="https://serliv.com/">Serliv.</a></h3>
-            <p>Desenvolvedor front-end, apaixonado por conhecimento e tecnologia.</p>
-            <section>
+        <article>
+                <h2>A sua área para armazenar seus códigos HTML e CSS</h2>
+                <h3>Componentes criados por Pablo Henrique Ferreira de França para o curso da <a href="https://serliv.com/">Serliv.</a></h3>
+                <p>Desenvolvedor front-end, apaixonado por conhecimento e tecnologia.</p>
+        </article>
+        
                 <h3>Vem conhecer nossas redes sociais</h3>
                 <nav>
-                    <ul class="botao_redessociais">
+                    <ul class="botao__redessociais">
                         <li>
                             <a href=""> youtube
                                 <img src="redes_sociais/youtube_32px.png" alt="youtube">
