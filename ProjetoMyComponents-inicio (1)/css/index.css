@@ -35,6 +35,7 @@ a{
     display: flex;
     flex-direction: row;
     gap: 2em;
+
 }
 
 .main, .main-header {
@@ -42,5 +43,22 @@ a{
 }
 
 .perfil-img {
+    max-width: 50%;
+}
+
+.perfil-img {
     max-width: 10rem;
+}
+.menu__navegacao {
+    list-style-type: none;
+}
+
+.menu__navegacao li {
+    padding-bottom: 2em;
+    border-bottom: 1px solid white;
+
+}
+.menu__navegacao a{
+    text-decoration: none;
+
 }
