@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 :root { 
     --primary-color: #ff7833;
     --secondary-color: #313338;
@@ -9,11 +10,12 @@
 html {
     font-size: 62.5%;
 }
+
 body {
     display: flex;
     margin: 0;
     color: var(--text-color);
-    background-color: #ccc;
+    background-color: var(--secondy-color-light);
     font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7;
@@ -46,6 +48,10 @@ h2{
 
 a{
     color: inherit;
+}
+
+.underline {
+    text-decoration: red wavy underline;
 }
 
 .botao__redessociais {
