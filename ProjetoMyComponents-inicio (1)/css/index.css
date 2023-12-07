@@ -16,6 +16,21 @@ body {
     background-color: #ccc;
     font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
+    line-height: 1.7;
+}
+h1 {
+    font-size: 4rem;
+    color: #7b7b7b;
+    margin-top: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+h2{
+    border-top: 1rem;
 }
 
 .main-header {
@@ -26,6 +41,7 @@ body {
 .main {
     background-color: var(--secondy-color-light);
     flex: 1 0;
+    padding: 6.5rem 6rem 7.5rem;
 }
 
 a{
@@ -66,6 +82,7 @@ a{
 .menu__navegacao li {
     border-bottom: 1px solid #7b7b7b;
     padding-bottom: 0 0.4em;
+
 }
 
 .main_nav ul a {
@@ -80,4 +97,9 @@ a{
     background-color:var(--secondy-color-light);
     transition: padding-right 0.2s, background-color .4s;
     padding-right: 1rem;
+}
+
+li a img {
+    height: 36px;
+    width: 36px;
 }
