@@ -56,7 +56,7 @@
 
                 <h4>Citações</h4>
 
-                <cite>De acordo com o site Mozila, "Firefox, 1.0 foi lançado em 2004 e. E se tornou um grande sucesso"</cite>
+                <blockquote>De acordo com o site <cite>Mozila</cite>, "Firefox, 1.0 foi lançado em 2004 e. E se tornou um grande sucesso" </blockquote>
                 
                 <p>Isto é um paragrafo de citação. Indica que o texto incluido é uma longa citação. Normalmente, este é processado visualmente pelo recuo. Uma URL para a fonte da citação pode ser dada usando o atributo cite</p>
 
@@ -65,7 +65,9 @@
             <article>
 
                 <h4>Abreviações</h4>
-                <p>podemos usar CSS para estilizar nossos arquivos <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+                <p><dfn>Podemos usar CSS para estilizar nossos arquivos <abbr title="cascading style sheets ou folhas de estilo em castata">CSS</abbr></dfn>.</p>
+
+                <q>podemos usar também o Q para <cite>citações curtas</cite>.</q>
 
             </article>
 
@@ -77,6 +79,23 @@
                 <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N <sub>4</sub>O<sub>2</sub>.</p>
 
                 <p>if x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+            </article>
+            
+            <article>
+                <h4>"Coisas" de computador</h4>
+                <p>Use tags corretas para representar elementos como teclas, techos de códigos, código de saída, etc.</p>
+                <p>Pressione <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar.</p>
+                <p>utilize a tag kbd para representar uma entrada do teclado</p>
+                <p>a tag <code>pre</code>, formata levando em consideração as quebras de linhas, os espaços e as tabulações do visual code.</p>
+                <pre>
+&lt;script&gt;
+    alert('oi');
+&lt;/script&gt;
+                </pre>
+
+                <p>
+                    Após executar o método <code>push</code> obtive o retorno <samp lang="en-us">Undefined has not a push() function</samp>
+                </p>
             </article>
 
         </section>
