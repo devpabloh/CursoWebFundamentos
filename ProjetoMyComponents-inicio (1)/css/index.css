@@ -23,18 +23,29 @@ body {
 h1 {
     font-size: 4rem;
     color: #7b7b7b;
-    margin-top: 2.4rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
 h2, h3, h4, h5, h6 {
     color: var(--primary-color);
+    margin: 0;
 }
 
 h2{
     border-top: 1rem;
 }
 
+.hightlight {
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1em;
+    padding-left: 2em;
+    margin-bottom: 2.2em;
+}
+
+article { 
+    padding: 1em 0;
+}
 .main-header {
     flex: 0 0 26rem;
     background-color:var(--secondary-color);
@@ -43,7 +54,7 @@ h2{
 .main {
     background-color: var(--secondy-color-light);
     flex: 1 0;
-    padding: 6.5rem 6rem 7.5rem;
+    padding: 6.5rem 6rem 100vh;
 }
 
 a{
@@ -87,7 +98,7 @@ a{
 }
 .menu__navegacao li {
     border-bottom: 1px solid #7b7b7b;
-    padding-bottom: 0 0.4em;
+    padding-bottom: .4rem 0;
 
 }
 
@@ -99,7 +110,8 @@ a{
     
 }
 
-.main_nav ul a:hover {
+.main_nav ul a:hover,
+.main_nav ul a:focus {
     background-color:var(--secondy-color-light);
     transition: padding-right 0.2s, background-color .4s;
     padding-right: 1rem;
@@ -108,4 +120,23 @@ a{
 li a img {
     height: 36px;
     width: 36px;
+}
+
+.card {
+    max-width: 740px;
+    background-color: var(--secondary-color);
+    padding: 0;
+}
+
+.card_content {
+    padding: .5em 1em 1em;
+}
+
+.card_content p, .card_title {
+    margin: 0;
+
+}
+
+.card__title {
+    font-size: 1.75em;
 }
