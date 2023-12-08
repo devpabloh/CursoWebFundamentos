@@ -46,6 +46,11 @@ h2{
 article { 
     padding: 1em 0;
 }
+
+section {
+    margin-bottom: 3rem;
+}
+
 .main-header {
     flex: 0 0 26rem;
     background-color:var(--secondary-color);
@@ -147,5 +152,6 @@ li a img {
 
 .row {
     display: flex;
-    gap: 1.5em;
+    gap: 3rem;
+    padding-top: 1.5rem;
 }
