@@ -140,3 +140,8 @@ li a img {
 .card__title {
     font-size: 1.75em;
 }
+
+.row {
+    display: flex;
+    gap: 1.5rem;
+}
