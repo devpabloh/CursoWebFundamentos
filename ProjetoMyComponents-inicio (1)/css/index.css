@@ -154,4 +154,5 @@ li a img {
     display: flex;
     gap: 3rem;
     padding-top: 1.5rem;
+    justify-content: space-between;
 }
