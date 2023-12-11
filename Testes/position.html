@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute e position static</title>
+    <style>
+        .container {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #333;
+        }
+
+        .static-box {
+            position: static;
+            background-color: lightblue;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="static-box">posição estática</div>
+        <div class="absolute-box">posição absoluta</div>
+    </div>
+    
+</body>
+</html>

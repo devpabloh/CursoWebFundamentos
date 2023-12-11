@@ -156,3 +156,23 @@ li a img {
     padding-top: 1.5rem;
     justify-content: space-between;
 }
+
+.row > *{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
+}
+
+.alternate {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alternate li {
+    padding: 0;
+}
+
+.alternate li:not(:last-child)  {
+    border-bottom   : 2px solid white;
+}
+
