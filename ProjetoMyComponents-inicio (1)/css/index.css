@@ -255,3 +255,21 @@ input, textarea, select {
     margin-left: 0;
     margin-top: 2rem;
 }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td:last-child{
+    text-align: right;
+}
+
+.table td {
+    border-bottom: 2px solid var(--secondary-color-dark);
+    padding: 1.6rem;
+}
+
+.table th {
+    
+}
