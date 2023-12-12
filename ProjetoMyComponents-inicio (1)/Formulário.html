@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listas</title>
+        <link rel="stylesheet" href="css/css/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="main-header">
+        <nav class="main_nav">
+            <a href="">
+                <img src="redes_sociais/pablo_camisaazullonga.png" alt="" class="perfil-img">
+            </a>
+            
+            <ul class="menu__navegacao">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Tipográfia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="Formulário.html">Formulário</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        
+        <h1>My Component</h1>
+
+        <section>
+
+            <h2>Entre em contato</h2>
+
+            <div class="row">
+
+                <form action="#">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                        </div>
+                        <div>
+                            <label for="email">e-mail</label>
+                            <input type="email" name="email" id="email" placeholder="e-mail" autocomplete="off">
+                        </div>
+                    </div>
+                    
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                 </form>
+                
+                    <address>
+                        <p><b>Endereço</b> 1234, Somewhere Rd. Nashvile, TN 000000 United States</p>
+                        <p><b>Celular</b> 81 9 9952-3338</p>
+                        <p><b>Email</b> devpabloh@gmail.com</p>
+                    </address>
+                
+            </div>
+        </section>
+        <section>
+            <h2>Quiz</h2>
+            <form action="" class="form-quiz">
+                <label for="tecnologia">Qual sua linguagem preferida?</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null">Selecione...</option>
+                    <option value="html">HTML5</option>
+                    <option value="css">CSS3</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+                <label >Baixa prioridade <input type="radio" name="prioridade" value="baixa"></label>
+                <label>Média prioridade <input type="radio" name="prioridade" value="media"></label>
+                <label>Alta prioridade <input type="radio" name="prioridade" value="Alta"></label>
+
+                <label for=""><input type="checkbox" name="copy" value="verdadeiro"> Envie-me uma cópia</label>
+                <label for=""><input type="checkbox" name="humano" value="verdadeiro"> Sou um humano</label>
+
+                <div class="row">
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="enviar" class="btn">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
 </body>
 </html>
