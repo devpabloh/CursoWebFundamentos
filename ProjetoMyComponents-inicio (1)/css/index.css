@@ -214,6 +214,13 @@ input, textarea, select {
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
+    padding: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn + .btn{
+    margin-left: 2rem;
+
 }
 
 .btn:hover, .btn:focus {
@@ -228,4 +235,12 @@ input, textarea, select {
 
 .btn-stroke {
     background-color: transparent;
+}
+
+.btn-full {
+
+}
+
+.btn-big {
+
 }
