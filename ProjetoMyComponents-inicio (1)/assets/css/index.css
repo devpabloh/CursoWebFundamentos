@@ -314,5 +314,6 @@ input, textarea, select {
 
 .container-redessociais a:hover {
     color: var(--primary-color);
+    transition: 0.3s;
 }
 
