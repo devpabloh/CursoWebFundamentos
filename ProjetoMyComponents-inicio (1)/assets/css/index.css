@@ -296,3 +296,23 @@ input, textarea, select {
 .table-verticalLines th:not(:last-child) {
     border-right: 1px solid var(--secondary-color-dark);
 }
+
+.link-icon {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+.container-redessociais a:not(:first-child) {
+    margin: 0 0 0 2rem;
+}
+
+.container-redessociais {
+    padding-top: 2rem;
+}
+.container-redessociais a{
+    text-decoration: none;
+}
+
+.container-redessociais a:hover {
+    color: var(--primary-color);
+}
+
