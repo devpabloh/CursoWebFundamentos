@@ -8,7 +8,7 @@ body {
     background-image: linear-gradient( to top, white);
     background-attachment: fixed;
 }
-
+h1 {text-align: center;}
 .cores {
     background-color: color-mix(in srgb, var(--primary-color), transparent);
     width: 80%;
@@ -61,5 +61,18 @@ section {
 }
 
 .cores:nth-of-type(8) {
+    background-image: radial-gradient(circle at 10% 50%, blue, #f008 20%);
+}
 
+.cores:nth-of-type(9) {
+    background-image: conic-gradient( from 45deg, blue, green, red);
+    filter: blur(10px);
+}
+.cores:nth-of-type(10) {
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f);
+    transition: 5s linear;
+}
+
+.cores:nth-of-type(10):hover {
+    filter: hue-rotate(4turn);
 }
