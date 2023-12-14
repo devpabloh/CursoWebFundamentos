@@ -1,9 +1,16 @@
 @charset "UTF-8";
+:root {
+    --primary-color: #e10f0f;
+
+}
 body {
     font-family: sans-serif;
+    background-image: linear-gradient( to top, blue, red);
+    background-attachment: fixed;
 }
 
 .cores {
+    background-color: color-mix(in srgb, var(--primary-color), transparent);
     width: 80%;
     border: 8px dashed black;
     margin: 20px auto;
@@ -25,4 +32,9 @@ section {
     content: counter(contador);
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.cores:nth-of-type(2) {
+    background-color: white;
+    background-clip: content-box;
 }
