@@ -31,7 +31,7 @@ section {
 .cores::before {
     content: counter(contador);
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .cores:nth-of-type(2) {
@@ -57,9 +57,9 @@ section {
 }
 
 .cores:nth-of-type(7) {
-    background-image: radial-gradient(circle at top, blue, #f008);
+    background-image: radial-gradient(circle at left top, blue, #f008);
 }
 
 .cores:nth-of-type(8) {
-    
+
 }
