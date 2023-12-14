@@ -55,3 +55,11 @@ section {
 .cores:nth-of-type(6) {
     background-image: radial-gradient(circle, blue 30%, #f008, green 50%, yellow);
 }
+
+.cores:nth-of-type(7) {
+    background-image: radial-gradient(circle at top, blue, #f008);
+}
+
+.cores:nth-of-type(8) {
+    
+}
