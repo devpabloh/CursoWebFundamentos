@@ -38,3 +38,8 @@ section {
     background-color: white;
     background-clip: content-box;
 }
+
+.cores:nth-of-type(3) {
+    background-color: hsl(90deg, 100%, 50%);
+    background-clip: border-box;
+}
