@@ -77,3 +77,15 @@ section {
     filter: hue-rotate(4turn);
 }
 
+.cores:nth-of-type(11) {
+    box-shadow:10px 10px 6px rgba(0, 0, 0, 0.8);
+}
+
+.cores:nth-of-type(12){
+    filter: drop-shadow(3px 3px 2px rgba(0,0,0,.8));
+}
+
+.cores:nth-of-type(13){
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .8));
+}

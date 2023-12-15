@@ -1,0 +1,44 @@
+@charset "UTF-8";
+html {
+    font-size: 62,5%;
+}
+body {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    background-color: aqua;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.cards {
+    width: 26rem;
+    border: 2px solid black;
+    border-radius: 1.9em 0em 0em 0em;
+    padding: 1rem;
+    background-color: rgba(255, 228, 196, 0.959);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+    transform: rotate(-4deg);
+}
+
+.conteudo__cards{
+    text-align: center;
+}
+
+.cards:hover {
+    transform: rotate(0);
+    transition: 1s;
+
+}
+
