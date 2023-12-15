@@ -6,10 +6,12 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 1.6rem;
     background-color: aqua;
+    margin: 2em;
 }
 
 .titulo {
     text-align: center;
+    font-size: 48px;
 }
 
 .container {
@@ -20,20 +22,26 @@ body {
     gap: 2rem;
     margin-top: 2rem;
     
+    
 }
 
 .cards {
     width: 26rem;
-    border: 2px solid black;
-    border-radius: 1.9em 0em 0em 0em;
-    padding: 1rem;
+    filter: drop-shadow(0 0 5px black);
+    /*border: 2px solid black;*/
+    background-image: linear-gradient(135deg, aqua 30px, transparent 30px);
+    padding: 40px 30px 30px 50px;
     background-color: rgba(255, 228, 196, 0.959);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, .4);*/
     transform: rotate(-4deg);
+    
 }
 
 .conteudo__cards{
     text-align: center;
+}
+.card__title {
+    margin: 0;
 }
 
 .cards:hover {
