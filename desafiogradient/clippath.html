@@ -19,51 +19,10 @@ body {
     text-align: center;
     font-size: 48px;
 }
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5625rem;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-}
-
-/*
-passo 1 - primeira versão:
-.cards {
-    width: 26rem;
-    filter: drop-shadow(0 0 5px black);
-    background-image: linear-gradient(135deg, transparent 30px, rgba(255, 228, 196, 0.959) 30px);
-    padding: 40px 30px 30px 50px;
-    transform: rotate(-4deg);}*/
-/*
-Passo 2 - Segunda versão:
-.cards {
-    width: 26rem;
-    filter: drop-shadow(0 0 5px black);
-    background-image:
-    linear-gradient(135deg, transparent 30px, rgba(140, 140, 140, 0.563) 30px),
-     linear-gradient(135deg, transparent 30px, rgba(255, 228, 196, 0.959) 30px)
-     ;
-     background-size: 45.5px 45.5px, 100%;
-     background-repeat: no-repeat;
-    padding: 40px 30px 30px 50px;
-    transform: rotate(-4deg);
-}
-*/
-
 .card {
-
-    flex-basis: clamp(300px, calc(33% - 25px), 400px);
-    flex-grow: 1;
-
-    /*width: 26rem;*/
+    width: 300px;
+    background-color: white;
     padding: 40px 30px 30px 50px;
-    background-image: linear-gradient(135deg, transparent 30px, rgba(255, 228, 196, 0.959) 30px);
-    filter: drop-shadow(0 0 5px black);
     box-sizing: border-box;
     position: relative;
     margin-bottom: 1.5625rem;
@@ -91,10 +50,14 @@ Passo 2 - Segunda versão:
     height: 43.6px;
     position: absolute;
     top: 0;
-    left: 0;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0,.3));
-    background-image: linear-gradient(135deg, transparent 30px, rgb(153, 153, 153)25px);}
+    left: 0;}
 
+    .exemplo {
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-top: 5px solid black;
+    }
 
     </style>
 </head>
@@ -103,6 +66,6 @@ Passo 2 - Segunda versão:
         <h2 class="card__title" >Lorem ipsum dolor</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eum ullam aliquid consequatur corrupti facere!</p>
     </article>
-    
+    <div class="exemplo"></div>
 </body>
 </html>
