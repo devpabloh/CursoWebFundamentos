@@ -19,8 +19,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5625rem;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    outline: 2px solid black;
 }
 
 /*
@@ -48,7 +51,11 @@ Passo 2 - Segunda versão:
 */
 
 .cards {
-    width: 26rem;
+
+    flex-basis: clamp(300px, calc(33% - 25px), 400px);
+    flex-grow: 1;
+
+    /*width: 26rem;*/
     padding: 40px 30px 30px 50px;
     background-image: linear-gradient(135deg, transparent 30px, rgba(255, 228, 196, 0.959) 30px);
     filter: drop-shadow(0 0 5px black);
