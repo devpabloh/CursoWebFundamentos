@@ -45,7 +45,7 @@ body {
     background-color: yellow;
 }
 
-.card-wrapper {
+.card-wrapper, main {
     container-type: inline-size;
 }
 
@@ -62,17 +62,18 @@ body {
 
     .cards_container {
         display: flex;
-        
         gap: 1em;
-
         flex-direction: column;
-    }    
+    } 
 }
 
-/*@media screen and (min-width: 70em) { 
-    .cards_container{
-        display: flex;
+@container (min-width: 60em) { 
+    .cards_container {
         flex-direction: row;
     }
-}*/
+
+    .card_wrapper {
+        flex-grow: 1;
+    }
+}
 
