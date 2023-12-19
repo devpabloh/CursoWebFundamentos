@@ -24,7 +24,8 @@ body {
 .card_body{
     padding: 1em;
     box-sizing: border-box;
-    background-color: #ccc;  
+    background-color: #ccc; 
+    flex-grow: 1; 
 }
 
 .card_cta {
@@ -44,7 +45,12 @@ body {
     background-color: yellow;
 }
 
-@media screen and (max-width: 50em) {
+.card-wrapper {
+    container-type: inline-size;
+}
+
+/*@media screen and (min-width: 50em)*/ 
+@container (min-width: 50em){
     .card_header img {
         max-height: initial;
     }
@@ -54,7 +60,19 @@ body {
         flex-direction: row;
     }
 
+    .cards_container {
+        display: flex;
+        
+        gap: 1em;
 
-
-    
+        flex-direction: column;
+    }    
 }
+
+/*@media screen and (min-width: 70em) { 
+    .cards_container{
+        display: flex;
+        flex-direction: row;
+    }
+}*/
+
