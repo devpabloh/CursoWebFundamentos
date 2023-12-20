@@ -3,9 +3,11 @@
     --primary-color:#612674;
 }
 
-.max_width{
+/*.max_width{
     max-width: 70.25em;
-}
+}*/
+
+@media screen and (max-width: 48.75em) {
 
 .container_header {
     text-align: center;
@@ -33,5 +35,42 @@
 }
 
 .top_header_nav a:hover {
-    background-color: grey;
+    background-color: color-mix(in srgb, var(--primary-color), white 10%)
+}
+}
+@media screen and (min-width: 48.75em){
+
+    .max_width {
+        margin: auto;
+    }
+    .container_header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .top_header_logo {
+        margin-left: 1.5em;
+    }
+
+    .top_header_nav {
+        background-color: initial;
+        
+    }
+
+    .top_header_nav li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .top_header_nav a{
+        color: var(--primary-color);
+        text-decoration: none;
+        padding: 1em;
+        
+    }
+
+    .top_header_nav a:hover {
+        background-color: color-mix(in srgb, var(--primary-color), white 60%)
+    }
 }
