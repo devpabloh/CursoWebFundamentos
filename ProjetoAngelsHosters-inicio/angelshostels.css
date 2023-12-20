@@ -1,0 +1,28 @@
+@charset "UTF-8";
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.container_menu {
+    align-items: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.container_menu a {
+    font-size: 2em;
+    text-decoration: none;
+    padding: 1em;
+}
