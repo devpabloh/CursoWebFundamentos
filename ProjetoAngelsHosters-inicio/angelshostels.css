@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
     --primary-color:#612674;
+    --defaut-gap: 1rem;
 }
 
 html {
@@ -225,6 +226,7 @@ min-width: 74em -> col-xl
 .row {
     display: flex;
     flex-wrap: wrap;
+    gap: var(--defaut-gap);
 }
 
 .col {
@@ -239,8 +241,14 @@ min-width: 74em -> col-xl
 @media screen and (min-width: 48.75em) { 
   
     .col-md-6 {
-        width: 50%;
+        width: calc(50% - var(--defaut-gap));
     }
 
+}
+
+@media screen and (min-width: 74em) {
+        .col-xl-3 {
+            width: calc(25% - var(--defaut-gap));
+        }
 }
 
