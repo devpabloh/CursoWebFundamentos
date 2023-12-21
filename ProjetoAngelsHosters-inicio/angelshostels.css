@@ -188,6 +188,30 @@ h1, h2, h3, h4 {
     }
 }
 
+.middle-content {
+    background-color: #f6f6f6;
+}
+
+.middle-content a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.middleContent_title {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 1.25em;
+}
+
+.middleContent span[class^="icon-"] {
+    color: var(--primary-color);
+    font-size: 3.5em;
+}
+
+.middleContent p {
+    line-height: 1.5;
+}
+
 /* 
 min-width: 0 -> col-sn
 min-width: 48.75em -> col-md
