@@ -221,3 +221,26 @@ min-width: 48.75em -> col-md
 min-width: 56.25em -> col-lg
 min-width: 74em -> col-xl
 */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12{
+    width: 100%;
+}
+
+@media screen and (min-width: 48.75em) { 
+  
+    .col-md-6 {
+        width: 50%;
+    }
+
+}
+
