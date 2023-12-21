@@ -188,11 +188,13 @@ h1, h2, h3, h4 {
     }
 }
 
-.middle-content {
+.middleContent {
     background-color: #f6f6f6;
+    text-align: center;
+    padding: 2em;
 }
 
-.middle-content a{
+.middleContent a{
     text-decoration: none;
     color: inherit;
 }
@@ -206,6 +208,7 @@ h1, h2, h3, h4 {
 .middleContent span[class^="icon-"] {
     color: var(--primary-color);
     font-size: 3.5em;
+    
 }
 
 .middleContent p {
