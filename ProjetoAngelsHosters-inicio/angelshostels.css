@@ -275,3 +275,7 @@ min-width: 74em -> col-xl
 .mainContent_img img {
     width: 100%;
 }
+
+.mainContent .row {
+    row-gap: 4em;
+}
