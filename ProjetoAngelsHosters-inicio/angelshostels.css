@@ -264,4 +264,6 @@ min-width: 74em -> col-xl
     text-transform: uppercase;
     color: var(--primary-color);
     font-weight: none;
+    letter-spacing: .2em;
+    font-size: 1.25em;
 }
