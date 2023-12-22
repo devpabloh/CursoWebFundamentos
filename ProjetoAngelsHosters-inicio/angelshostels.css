@@ -267,3 +267,7 @@ min-width: 74em -> col-xl
     letter-spacing: .2em;
     font-size: 1.25em;
 }
+
+.mainContent .row {
+    gap: 3em;
+}
