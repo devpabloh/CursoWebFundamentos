@@ -247,9 +247,13 @@ min-width: 74em -> col-xl
 }
 
 @media screen and (min-width: 74em) {
-        .col-xl-3 {
-            width: calc(25% - var(--defaut-gap));
-        }
+    .col-xl-3 {
+        width: calc(25% - var(--defaut-gap));
+    }
+
+    .col-xl-6 {
+        width: calc(50% - var(--defaut-gap));
+    }
 }
 
 .mainContent {
@@ -268,6 +272,6 @@ min-width: 74em -> col-xl
     font-size: 1.25em;
 }
 
-.mainContent .row {
-    gap: 4em;
+.mainContent_img img {
+    width: 100%;
 }
