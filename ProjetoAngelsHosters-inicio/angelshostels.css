@@ -252,3 +252,16 @@ min-width: 74em -> col-xl
         }
 }
 
+.mainContent {
+    padding: 2em;
+}
+
+.mainContent p{
+    line-height: 1.2em;
+}
+
+.mainContent_title {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: none;
+}
