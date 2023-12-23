@@ -280,13 +280,3 @@ min-width: 74em -> col-xl
     row-gap: 4em;
 }
 
-.maincontent_article {
-    container: main-content / inline-size;
-
-}
-
-@container main-content (min-width: 600px) {
-    .mainContent_container {
-        display: flex;
-    }
-}
