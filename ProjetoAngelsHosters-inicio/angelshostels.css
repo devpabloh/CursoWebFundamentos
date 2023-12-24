@@ -280,9 +280,9 @@ min-width: 74em -> col-xl
     row-gap: 4em;
 }
 
-.footer {
+footer {
     text-align: center;
     color: #83969f;
-    background-color: #25303e ;
+    background-color: #25303e;
     padding: 2em;
 }
