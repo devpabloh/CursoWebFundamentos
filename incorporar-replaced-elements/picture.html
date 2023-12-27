@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Picture</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <img src="rwd-images/1280.jpg" alt="texto alternativo">
+    <img src="rwd-images/1280.jpg" alt="texto alternativo" srcset="rwd-images/960.jpg 960w, rwd-images/640.jpg 640w, rwd-images/480.jpg 480w, rwd-images/320.jpg 320w" sizes="(min-width: 960px) 960vw, (min-width:640px) 640vw, (min-width:480px) 480vw, (min-width:320px) 320vw">
+    <hr>
+    <picture>
+        <source media="(min-width: 900px)" srcset="rwd-images/1280.jpg 1280w, rwd-images/960.jpg 960w rwd-images/640.jpg 640w" sizes="33vw">
+        <source media="(min-width: 600px)" srcset="rwd-images/1280.jpg 1280w, rwd-images/960.jpg 960w, rwd-images/640.jpg 640w">
+
+        <img src="rwd-images/1280.jpg" alt="texto alternativo">
+    </picture>
+
     
 </body>
 </html>
