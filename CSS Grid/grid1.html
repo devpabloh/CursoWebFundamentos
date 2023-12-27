@@ -6,7 +6,7 @@
     <title>CSS grid</title>
     <style>
         .gridContainer {
-            width: 300px;
+            width: 100%;
             background-color: #ccc;
         }
 
@@ -30,19 +30,33 @@
 
         .gridContainer {
             display: grid;
+            width: 100%;
 
 
            /* grid-template-columns: 100px 100px 100px;
             grid-template-rows: 100px 100px; */
 
-            grid-template-columns: repeat(3, 100px);
-            grid-template-rows: repeat(2, 100px);
+            /* também podemos usar a medida fr que indica fração
+            grid-template-columns: repeat(3, 1fr);*/
+
+            grid-template-columns: 50px 1fr 100px 100px;
+            grid-template-rows: 100px 100px 100px;
 
             /* row-gap: 10px;
             column-gap: 10px; */
 
-            gap: 10px 20px;
+            gap: 10px 5px;
 
+        }
+
+        .gridItem:nth-child(1) {
+            background-color: yellow;
+            /*grid-row-start: 1;
+            grid-row-end: 2;*/
+            grid-row: 1 / 2;
+            grid-column: 1 / -2;
+            /*grid-column-start: 1;
+            grid-column-end: -1;*/
         }
     </style>
 </head>
