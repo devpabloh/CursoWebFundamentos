@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .gridContainer {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ccc;
+        }
+
+        .gridItem {
+            background-color: orange;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+        /* Grid */
+
+        .gridContainer {
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gridContainer">
+        <header class="header gridItem">Header</header>
+        <nav class="nav gridItem">Nav</nav>
+        <aside class="aside gridItem">Aside</aside>
+        <main class="main gridItem">
+            main
+        </main>
+        <footer class="footer gridItem">Footer</footer>
+    </div>
+    
+</body>
+</html>
