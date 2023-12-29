@@ -27,7 +27,28 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 75px 50px 1fr 50px;
             gap: 1em;
+
+            /* Para fazer da primeira forma, utilizamos o grid-template-areas para dar nome as areas que vamos ter no site.
+            Observação a quantidade de nomes varia de acordo com a quantidade de colunas que terá no site */
+            grid-template-areas: 
+            "header header header"
+            "nav nav aside"
+            "main main aside"
+            "footer footer footer"
+            ;
         }
+
+        /* Primeira forma de organizar o site com CSS Grid usando a tag grid area */
+
+        .header {
+            grid-area: header;
+        }
+
+        .nav {
+            
+        }
+
+        /* Segunda forma de fazer com CSS Grid
 
         .header {
             grid-column: 1 / -1;
@@ -41,7 +62,8 @@
         .aside {
             grid-row: 2 / -1;
             grid-column: 3 / -1;
-            /* A propriedade Z-index vem com o valor de 0, mas se a gente quiser mudar a ordem de uma tag, para ficar por cima da outra usamos ele e colocamos um valor. */
+
+            /* A propriedade Z-index vem com o valor de 0, mas se a gente quiser mudar a ordem de uma tag, para ficar por cima da outra usamos ele e colocamos um valor. 
             z-index: 1;
         }
 
@@ -57,6 +79,11 @@
         .gridItem {
             outline: 2px solid black;
         }
+        */
+
+        
+
+
 
 
 
