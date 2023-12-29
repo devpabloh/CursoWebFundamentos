@@ -29,12 +29,32 @@
             gap: 1em;
 
             /* Para fazer da primeira forma, utilizamos o grid-template-areas para dar nome as areas que vamos ter no site.
-            Observação a quantidade de nomes varia de acordo com a quantidade de colunas que terá no site */
+            Observação: 
+            - a quantidade de nomes varia de acordo com a quantidade de colunas que terá no site
+            - se quiser colocar espaços vazios você pode adicionar uma palavra diferente das escolhidas, mas de preferência adicionar um . no lugar que quer que fique vazio, da seguinte forma: 
             grid-template-areas: 
+            "header header ."
+            "nav nav aside"
+            "main . aside"
+            "footer footer ."
+
+            Se em vez de ponto ou um nome diferente você deixar o local vazio, o seu código vai quebrar.
+             */
+            /*grid-template-areas: 
             "header header header"
             "nav nav aside"
             "main main aside"
             "footer footer footer"
+            ;
+            */
+            
+            /* também podemos fazer utilizando shorthand (proprieades abreviadas) dessa forma: */
+
+            grid-template: 
+            "header header header" 75px
+            "nav nav ." 50px
+            "main main aside" 1fr
+            "footer footer footer" 
             ;
         }
 
