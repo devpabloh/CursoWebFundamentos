@@ -6,23 +6,26 @@
     <title>Desafio Calculadora</title>
     <style>
         body {
+            background-image: linear-gradient(#5d61f2, #27296b);
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            min-height: 100vh;
             margin: 0;
-            background-color: blue;
         }
+
         .calculadora {
             display: grid;
-
-           
-        }
-
-        button {
-            grid-template-columns: repeat(4, 50px);
-            grid-template-rows: 50px 50px 50px 50px;
+            grid-template-columns:repeat(4, 1fr);
+            grid-template-rows: repeat(6, 60px);
         }
     </style>
 </head>
 <body>
-    <div class="Calculadora">
+    <div class="calculadora">
         <output class="display"></output>
         <button>AC</button>
         <button>%</button>
