@@ -20,13 +20,46 @@
         .calculadora {
             display: grid;
             grid-template-columns:repeat(4, 1fr);
-            grid-template-rows: repeat(6, 60px);
+            grid-template-rows: 80px repeat(5, 60px);
+            gap: .5em;
+
+            width: 300px;
+            padding: 20px;
+            background-image: linear-gradient(#5981a4, #2b4772);
+            box-shadow: 0 0 10px rgb(0 0 0 / .8);
+            border-radius: 5px;
+        }
+        
+        .displa, button {
+            background-image: linear-gradient(#353535,#1b1717);
+            color: white;
+
+        }
+
+        .display {
+            background-image: linear-gradient(#353535,#1b1717);
+            box-shadow: inset 3px 3px 0 #161616;
+            color: white;
+            font-size: 2em;
+
+            padding-right: 8px;
+
+            grid-column: 1 / -1;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        button {
+            
         }
     </style>
 </head>
 <body>
     <div class="calculadora">
-        <output class="display"></output>
+        <output class="display">0</output>
         <button>AC</button>
         <button>%</button>
         <button>X</button>
