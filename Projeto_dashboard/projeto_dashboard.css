@@ -1,1 +1,14 @@
 @charset "UTF-8";
+:root {
+    --primary-color:#004eDa;
+    --second-color:#f2f2f8;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+
+    grid-template-rows: 64px auto;
+}
+
