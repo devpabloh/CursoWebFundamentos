@@ -2,13 +2,51 @@
 :root {
     --primary-color:#004eDa;
     --second-color:#f2f2f8;
+    --defaut-padding:2rem;
+
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 240px 1fr;
-
     grid-template-rows: 64px auto;
+
+    margin: 0;
 }
 
+.mainNav {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    background-color: red;
+}
+
+.topNav {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    background-color: blue;
+}
+
+main {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    background-color: orange;
+}
+
+.mainNav-linkLogo {
+    padding-left: var(--defaut-padding);
+    padding-top: var(--defaut-padding);
+    display: inline-block;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
