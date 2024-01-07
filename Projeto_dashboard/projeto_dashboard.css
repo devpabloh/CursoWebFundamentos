@@ -23,7 +23,7 @@ body{
     
     grid-row: 1 / -1;
     grid-column: 1 / 2;
-    background-color: grey;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -88,7 +88,23 @@ main {
 }
 
 .perfil {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
     margin-right: var(--defaut-padding);
+}
+
+.perfil_thumb {
+    height: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-right: calc(var(--defaut-padding) / 2);
+    box-sizing: border-box;
+}
+
+.perfil_thumb img {
+    height: 100%;
 }
 
 .perfil_name {
@@ -101,5 +117,5 @@ main {
     font-size: .7rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: color-mix(in srgb, var(--color-text, transparent 60%));
+    color: color-mix(in srgb, var(--black), transparent 60%);
 }
