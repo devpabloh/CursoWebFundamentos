@@ -82,3 +82,7 @@ main {
 .mainNav_menu:last-child {
     padding-bottom: var(--defaut-padding);
 }
+
+.perfil {
+    padding-right: var(--defaut-padding);
+}
