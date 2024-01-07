@@ -84,5 +84,5 @@ main {
 }
 
 .perfil {
-    padding-right: var(--defaut-padding);
+    margin-top: var(--defaut-padding);
 }
