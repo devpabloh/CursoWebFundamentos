@@ -16,9 +16,13 @@ body{
 }
 
 .mainNav {
+    
     grid-row: 1 / -1;
     grid-column: 1 / 2;
     background-color: red;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .topNav {
@@ -43,8 +47,18 @@ main {
     font-size: 1.5rem;
 }
 
-.menu {
+.mainNav_menu, .topNav_menu {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: var(--defaut-padding);
+
+}
+.menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .menu a {
