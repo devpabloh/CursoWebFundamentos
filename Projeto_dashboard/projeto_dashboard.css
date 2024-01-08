@@ -88,11 +88,11 @@ main {
 }
 
 .perfil {
-    height: 100%;
-    display: flex;
-    align-items: center;
-
     margin-right: var(--defaut-padding);
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
 }
 
 .perfil_thumb {
