@@ -66,6 +66,9 @@ main {
     padding-left: var(--defaut-padding);
 
 }
+.mainNav_menu svg, .topNav_menu svg {
+    vertical-align: middle;
+}
 
 .mainNav_menu a, .topNav_menu a {
     text-decoration: none;
