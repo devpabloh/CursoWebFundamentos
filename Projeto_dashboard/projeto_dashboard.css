@@ -38,7 +38,12 @@ img {
 
     display: flex;
     flex-direction: column;
-    padding-right: var(--defaut-padding);
+    /*padding-right: var(--defaut-padding);*/
+}
+
+.mainNav_menu:not(:last-child) {
+
+    border-bottom: 2px solid red;
 }
 
 .topNav {
@@ -103,7 +108,8 @@ main
     vertical-align: bottom;
 }
 
-.mainNav_menu a, .topNav_menu a {
+.mainNav_menu a, 
+.topNav_menu a {
     text-decoration: none;
     color: #5a5a5f;
 }
@@ -173,17 +179,17 @@ main
 }
 
 .summary article {
-    padding: calc(var(--defaut-padding) / 2) 0;
+    padding: var(--midle-padding) 0;
 }
 
-.sumary .number {
+.sumary_number {
     font-size: 1.2rem;
     color: var(--primary-color);
     font-weight: 600;
-    margin-left: calc(var(--defaut-padding) / 2);
+    margin-left: var(--midle-padding);
 }
 
-.separated {
+.sumary_separated {
     width: 2px;
     background-color: var(--color-text);
     align-self: stretch;
@@ -194,10 +200,10 @@ main
     color: white;
     text-decoration: none;
     border-radius: 4px;
-    padding: calc(var(--defaut-padding) / 2);
+    padding: calc(var(--defaut-padding) / 2) var(--defaut-padding);
 }
 
-.sumary .btn {
+.sumary_btn {
     align-self: stretch;
     display: flex;
     align-items: center;
