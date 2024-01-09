@@ -95,6 +95,11 @@ main
     text-decoration: none;
     color: #5a5a5f;
 }
+
+.mainNav_menu li {
+    margin-top: 1rem;
+}
+
 .menus {
     display: flex;
     flex-direction: column;
@@ -102,6 +107,7 @@ main
     flex-grow: 1;
     padding-top: var(--defaut-padding);
 }
+
 
 .menu a {
     text-decoration: none;
@@ -177,4 +183,10 @@ main
     text-decoration: none;
     border-radius: 4px;
     padding: calc(var(--defaut-padding) / 2);
+}
+
+.sumary .btn {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
 }
