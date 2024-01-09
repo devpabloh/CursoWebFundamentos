@@ -11,12 +11,14 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+    
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: max-content 1fr;
     grid-template-rows: 64px auto;
 
     margin: 0;
-    color: var(--color-text);
+    
 }
 
 .mainNav {
@@ -24,6 +26,9 @@ body{
     grid-row: 1 / -1;
     grid-column: 1 / 2;
     background-color: white;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
 
     display: flex;
     flex-direction: column;
