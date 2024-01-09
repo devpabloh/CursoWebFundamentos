@@ -3,6 +3,7 @@
     --primary-color:#004eDa;
     --second-color:#f2f2f8;
     --defaut-padding:2rem;
+    --midle-padding: calc(var(--defaut-padding) / 2);   
     --black: #111;
     --color-text: #5a5a5f;
 
@@ -15,10 +16,15 @@ body{
     
     display: grid;
     grid-template-columns: max-content 1fr;
-    grid-template-rows: 64px auto;
+    /* grid-template-rows: 64px auto; */
+    grid-template-rows: 4rem minmax( calc(100vh - 4rem), auto);
 
     margin: 0;
     
+}
+
+img {
+    max-width: 100%;
 }
 
 .mainNav {
@@ -32,6 +38,7 @@ body{
 
     display: flex;
     flex-direction: column;
+    padding-right: var(--defaut-padding);
 }
 
 .topNav {
@@ -105,7 +112,7 @@ main
     margin-top: 1rem;
 }
 
-.menus {
+.mainNav_menus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
