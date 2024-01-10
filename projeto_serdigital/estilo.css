@@ -155,3 +155,10 @@ img {
     flex-direction: column;
     gap: 3rem;
 }
+
+@media screen and (min-width: 46.5em) {
+    .testemunhos_wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
