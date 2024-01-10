@@ -27,6 +27,9 @@ body {
     display: block;
     padding: 2em 0;
 
+ /*   funcionar com menu de hamburguer */
+    display: none;
+
 }
 
 a {
@@ -80,6 +83,10 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1em;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 .hide {
@@ -141,4 +148,10 @@ img {
 .contato {
     margin-top: 6rem;
     margin-bottom: 6rem;
+}
+
+.testemunhos_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
