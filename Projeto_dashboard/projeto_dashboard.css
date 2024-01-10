@@ -43,7 +43,8 @@ img {
 
 .mainNav_menu:not(:last-child) {
 
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.341);
+    padding-bottom: var(--defaut-padding);
 }
 
 .topNav {
@@ -86,7 +87,10 @@ main > figure {
     margin: 0;
 }
 
-main
+.mainNav_menu {
+    padding-right: var(--defaut-padding);
+}
+
 .mainNav-linkLogo {
     padding-left: var(--defaut-padding);
     padding-top: var(--defaut-padding);
