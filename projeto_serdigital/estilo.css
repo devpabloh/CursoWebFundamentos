@@ -133,7 +133,6 @@ img {
 
 .footer {
     background-color: var(--gray);
-    padding: 3rem 0;
 }
 
 .footer ul {
@@ -209,6 +208,14 @@ img {
         text-align: left;
     }
 
+    h1 {
+        font-size: 3.625rem;
+    }
+
+    h2 {
+        font-size: 2.875rem;
+    }
+
     .header {
 
         display: flex;
@@ -270,6 +277,10 @@ img {
 }
 
 @media screen and (min-width: 90em) {
+
+    .hero_title {
+        margin-bottom: 6.25rem;
+    }
 
     .row {
         gap: 3rem;
