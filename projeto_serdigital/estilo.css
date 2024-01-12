@@ -19,6 +19,10 @@ body {
     margin: auto ;
 }
 
+.imagem {
+    text-align: center;
+}
+
 .hero_title {
     margin-top: 0;
 }
@@ -27,14 +31,13 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: right;
+    display: none;
 }
 
 .header-menu a {
     display: block;
     padding: 2em 0;
-
- /*   funcionar com menu de hamburguer */
-    display: none;
+    
 
 }
 
@@ -111,6 +114,11 @@ img {
     padding: 1rem;
 }
 
+.testemunho_thumb {
+    width: 8.125;
+    height: 8.125;
+}
+
 .contato {
     background-color: var(--gray);
     border-radius: 5px;
@@ -119,7 +127,8 @@ img {
 }
 
 .contato_image {
-    display: none;
+    display: block;
+    text-align: center;
 }
 
 .footer {
@@ -193,6 +202,41 @@ img {
 }
 
 @media screen and (min-width: 46.25em) {
+
+  
+
+    body {
+        text-align: left;
+    }
+
+    .header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-menu  {
+        display: block;
+        margin: 0;
+    }
+
+    .header-menu li{
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .header-menu a {
+        padding: 1.5rem;
+    }
+
+    .testemunho {
+        display: flex;
+      /*  align-items: center; */
+        gap: 1rem;
+    }
+
+
 
     .row {
         gap: 1rem;
