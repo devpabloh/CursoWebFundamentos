@@ -225,8 +225,11 @@ img {
 
 .icons li {
     display: inline-block;
-    margin-left: 1rem;
     font-size: 2rem;
+}
+
+.icons li + li {
+    margin-left: 1rem;
 }
 
 @container testemunhoCard (min-width: 42.187em) {
@@ -235,8 +238,6 @@ img {
         text-align: left;
     }
 }
-
-
 
 
 @media screen and (min-width: 46.25em) {
