@@ -256,10 +256,18 @@ img {
         font-size: 2.875rem;
     }
 
+    .header {
+        align-items: center;
+    }
+
 
     .header-menu  {
         /*display: block;*/
         margin: 0;
+    }
+
+    .menu-btn, .menu-icon {
+        display: none;
     }
 
     .header-menu li{
