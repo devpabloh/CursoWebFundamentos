@@ -264,7 +264,7 @@ img {
     }
 
     .header-menu  {
-        display: block;
+        /*display: block;*/
         margin: 0;
     }
 
@@ -349,4 +349,41 @@ img {
     .row> .lg-8-12 {
         grid-column: 8 / 13;
     }
+}
+
+/* hamburguer menu */
+
+.menu-icon {
+    position: relative;
+    cursor: pointer;
+    /*user-select: none;*/
+
+}
+
+.nav-icon {
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: relative;
+}
+
+.nav-icon::after, .nav-icon::before {
+    content: "";
+    background-color: #333;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    
+}
+
+.nav-icon::after{
+    background-color: blue;
+    transform: translateY(8px);
+}
+
+.nav-icon::before{
+    background-color: red;
+    transform: translateY(-8px);
 }
