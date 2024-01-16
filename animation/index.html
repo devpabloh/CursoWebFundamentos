@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anima</title>
+    <style>
+        @keyframes anda {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(300px);
+            }
+            
+        }
+        #anima {
+            outline: 3px solid red;
+            width: 400px;
+        }
+
+        #anima div {
+            width: 100px;
+            height: 50px;
+            background-color: #ccc;
+        }
+
+        #anima div:nth-child(1){
+            animation-name: anda;
+            animation-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="anima">
+        <div>1</div>
+    </div>
+    
+</body>
+</html>
