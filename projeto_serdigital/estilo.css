@@ -371,14 +371,21 @@ img {
     overflow: hidden;
     background-color: white;
 
+    transition: max-height .3s;
+    margin: 0;
+    padding-right: 1em;
 
-    /*max-height: 100vh;*/
+}
 
+.menu-btn:checked ~ .header-menu {
+    max-height: 100vh;
 }
 
 @media screen and (min-width: 46.25em){
     .header-menu {
         position: static;
+        max-height: initial;
+        background-color: initial;
     }
 }
 
