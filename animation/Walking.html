@@ -10,10 +10,43 @@
         .cat{
             width: 400px;
             height: 200px;
-            background-color: #ccc;
             background-image: url(walking_sprite.png);
             background-position: 0 0;
             background-repeat: no-repeat;
+
+            animation: anda 1s steps(12) infinite ;
+
+        }
+
+        @keyframes anda {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 0 -2390px;
+            }
+        }
+
+        .cat2{
+            width: 400px;
+            height: 200px;
+            background-image: url(walking_sprite.png);
+            background-position: -400px 0 ;
+            background-repeat: no-repeat;
+
+            animation: senta 1s steps(12) infinite;
+
+        }
+
+        @keyframes senta {
+            from {
+                background-position: -400px 0;
+            }
+
+            to {
+                background-position: -400px -2400px;
+            }
 
         }
 
@@ -23,6 +56,7 @@
 <body>
 
     <div class="cat"></div>
+    <div class="cat2"></div>
     
 </body>
 </html>
