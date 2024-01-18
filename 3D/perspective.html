@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D perspective</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .cena {
+            border: 2px solid #ccc;
+            width: 300px;
+            aspect-ratio: 1;
+            margin: 80px;
+        }
+
+        .plano {
+            background-color: red;
+            
+        }
+
+        #cena1 {
+            perspective: 400px;
+        }
+
+        #cena1 .plano {
+            width: 200px;
+            margin: 50px;
+            aspect-ratio: 1;
+            transform: rotatey(40deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cena" id="cena1">
+        <div class="plano">Plano</div>
+    </div>
+
+    
+</body>
+</html>
