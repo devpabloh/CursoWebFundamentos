@@ -31,12 +31,28 @@
             aspect-ratio: 1;
             transform: rotatey(40deg);
         }
+
+        #cena2 {
+            perspective: 1000px;
+
+        }
+
+        #cena2 .plano {
+            width: 200px;
+            margin: 50px;
+            aspect-ratio: 1;
+            transform: rotatex(40deg);
+        }
     </style>
 </head>
 <body>
 
     <div class="cena" id="cena1">
         <div class="plano">Plano</div>
+    </div>
+
+    <div class="cena" id="cena2">
+        <div class="plano">Plano 2</div>
     </div>
 
     
