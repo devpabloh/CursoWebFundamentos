@@ -11,17 +11,19 @@
     
     <script>
 
-        let n = parseFloat(prompt("Digite um número"))
+    let n = parseFloat(prompt("Digite um número"))
 
-        let contador = 0
+    if(!isNaN(n)){
 
-        // Enquanto(while) contador <= 1000
-        while(contador <= 1000) {
+    for (let i = 0; i <= 1000; i++){
+        document.write (n + " x "+ i + " : " + n * i + "<br>")
+    }
 
-            document.write(n + " x "+ contador + " : " + n * contador + "<br>")
-            contador++
+    documet.write("Saiu do loop")
 
-        }
+    } else {
+        alert("Por favor, digitar apenas números.")
+    }
 
     </script>
     
