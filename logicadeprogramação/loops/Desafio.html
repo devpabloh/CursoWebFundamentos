@@ -16,9 +16,15 @@
                 continue
             }
             console.log(i)
+            let sorteio = parseInt(Math.random() * 100) + 1
+            console.log("sorteio", sorteio)
+
+            if(i % sorteio === 0) {
+                break
+            }
         }
 
     </script>
     
 </body>
-</html>
+</html> 
