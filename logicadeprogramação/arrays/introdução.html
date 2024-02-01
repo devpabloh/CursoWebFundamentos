@@ -12,21 +12,21 @@
     <script>
 
         // Sintaxe literal
-         let nomes = [ "João", "Maria", "Daniel", "Beatriz", "Ricardo" ] 
+          let nomes = ["João", "Maria", "Daniel", "Beatriz", "Ricardo", "Luciane"] 
 
-         let nome = prompt("digite seu nome")
+         let nomeDigitado = prompt("digite seu nome")
 
-         nomes[nomes.length] = nome
+         nomes[nomes.length] = nomeDigitado
 
         // Sintaxe função construtora
-        // let nomes = new Array("João", "Maria", "Daniel", "Beatriz") 
+        //let nomes = new Array("João", "Maria", "Daniel", "Beatriz") 
 
-        for (let i  = 0; i < nome.length; i++){
+        for (let i  = 0; i < nomes.length; i++){
 
             document.write("nome:" + nomes[i] + "<br>")
         }
 
-        document.write("A lista dos nomes possui" + nomes.length + "elementos")
+        document.write ("A lista dos nomes possui" + nomes.length + "elementos")
 
     </script>
     
