@@ -14,6 +14,10 @@
         // Sintaxe literal
          let nomes = [ "João", "Maria", "Daniel", "Beatriz", "Ricardo" ] 
 
+         let nome = prompt("digite seu nome")
+
+         nomes[nomes.length] = nome
+
         // Sintaxe função construtora
         // let nomes = new Array("João", "Maria", "Daniel", "Beatriz") 
 
@@ -22,7 +26,7 @@
             document.write("nome:" + nomes[i] + "<br>")
         }
 
-        console.log(nomes)
+        document.write("A lista dos nomes possui" + nomes.length + "elementos")
 
     </script>
     
