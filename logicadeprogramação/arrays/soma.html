@@ -15,7 +15,12 @@
 
         for(let i = 0; i < numeros.length; i++){
             let n = numeros[i]
-            soma = soma + n
+            
+            if(typeof n === "number"){
+                // Soma somente os números
+                soma = soma + n
+            }
+
 
         }
 
