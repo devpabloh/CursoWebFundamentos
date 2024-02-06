@@ -32,16 +32,31 @@
     <p>Ao escrever instruções condicionais, às vezes precisamos usar diferentes tipos de operadores para comparar valores. Esses operadores são chamados de operadores de comparação.</p>
     <div>
         <p>A seguir uma lista de alguns operadores de comparação úteis a sua sintaxe:</p>
-        <li>Menor que: &lt; </li>
-        <li>Maior que: &gt;</li>
-        <li>Menor que ou igual: &lt;=</li>
-        <li>Maior que ou igual: &gt;=</li>
-        <li>É igual a: ===</li>
-        <li>diferente de: !==</li>
+        <ul>
+            <li>Menor que: &lt; </li>
+            <li>Maior que: &gt;</li>
+            <li>Menor que ou igual: &lt;=</li>
+            <li>Maior que ou igual: &gt;=</li>
+            <li>É igual a: ===</li>
+            <li>diferente de: !==</li>
+        </ul>
     </div>
 
     <h2>Operadores lógicos</h2>
-    <p></p>
+    <p>Trabalhar com condicionais significa que usaremos booleanos que tem como valores true ou false. Em javaScript existem operadores que trabalham com valores booleanos conhecidos como operadores lógicos.</p>
+    <div>
+        <p>Existem três operadores lógicos:</p>
+        <ul>
+            <li>O operador lógico E que é representado por &&</li>
+            <li>O operador Ou que é representado por || (para colocar esse sinal, ele fica geralmente próximo ao shift do teclado)</li>
+            <li>O operador not, ou operador de negação que é representado por !</li>
+        </ul>
+        <p>Usamos o operador && quando queremos saber se as duas condições são true</p>
+        <p>Usamos o operador || quando precisamos que apenas uma das condições seja true</p>
+        <p>usamos o operador ! para negar ou inverter a negação de um valor em booleano</p>
+
+    </div>
+
 
     <script>
         // condição if
@@ -57,6 +72,19 @@
         } else{
 
         }
+
+        // Operadores lógicos
+
+        let mood = 'sleepy'
+        let tirednessLevel = 6
+
+        if(mood === 'sleepy' && tirednessLevel > 8){
+            console.log('É hora de dormir!')
+        }else{
+            console.log('Não é hora de dormir')
+        }
+
+
 
     </script>
     
