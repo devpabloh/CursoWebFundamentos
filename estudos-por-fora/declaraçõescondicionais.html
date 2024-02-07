@@ -38,20 +38,9 @@
 
     <p>A declaração else if sempre vem depois da declaração if e antes da declaração else. A declaração else if também requer uma condição. Vamos dar uma olhada na sintaxe.</p>
 
-    <p>
-        let stopLight = 'yellow' 
+    <h2>Declaração switch</h2>
 
-        if (stopLight === 'red') {
-              console.log('Stop!') 
-        } else if (stopLight === 'yellow'){
-             console.log('Slow down.');
-        } else if (stopLight === 'green') {
-              console.log('Go!')
-        } else{
-            console.log('cauntion, unknown!')
-        }
-
-    </p>
+    <p></p>
 
 
     <h2>Operadores de comparação</h2>
@@ -89,13 +78,13 @@
 
 
     <script>
-        // condição if
+        // Declaração condicional if
         sale = true
         if(sale) {
             console.log('Hora de comprar!')
         }
 
-        //condição if e else
+        // Declaração condicional if e else
 
         let groceryItem = 'papaya'
 
@@ -124,7 +113,7 @@
             console.log('Não é hora de dormir')
         }
 
-        // condicional else if
+        // Declaração condicional else if
 
         let Item = 'papaya'
 
@@ -135,7 +124,24 @@
         } else {
             console.log('esse item não existe.')
         }
+
+        // Declaração condicional switch
+
+        let Items = 'papaya'
         
+        switch (Items) {
+            case 'tomate':
+                console.log('tomate está R$ 0,49')
+                break
+            case 'limão':
+                console.log('limão está R$ 1,49')
+            case 'papaya': 
+                console.log('papaya está R$ 1,29')
+                break
+            default: 
+                console.log('Invalid item')
+                break
+        }
 
         
 
