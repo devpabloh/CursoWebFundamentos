@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        
-    </script>
 </head>
 <body>
     <h1 id="titulo">Um título qualquer</h1>
@@ -15,6 +12,24 @@
     <hr>
 
     <input type="text" id="user" value="Valor preenchido">
+
+    <hr>
+
+    <ol id="listaTarefas">
+        <li>Aprender HTML e CSS3</li>
+        <li>Aprender Javascript</li>
+        <li>Aprender DOM profundamente</li>
+        <li>Criar algo</li>
+    </ol>
+
+    <script>
+        document.getElementById("titulo").textContent = "titulo alterado 2"
+
+        const lista = document.getElementById("listaTarefas")
+        let novaTarefa = "Aplicar à vagas de emprego"
+
+        lista.innerHTML += "<li> teste 2 <li>"
+    </script>
     
 </body>
 </html>
