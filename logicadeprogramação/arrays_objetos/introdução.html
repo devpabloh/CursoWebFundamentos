@@ -14,7 +14,7 @@
     </ul>
 
     <script>
-        const pessoas = [
+       /*  const pessoas = [
             { nome: "Daniel", email: "daniel@server.com" },
             { nome: "Maria", email: "Maria@server.com" },
             { nome: "João", email: "joão@server.com" },
@@ -26,8 +26,21 @@
 
         for(let i = 0; i < pessoas.length; i++){
             listaPessoas.innerHTML += `<li> ${pessoas[i].nome}: ${pessoas[i].email} </li>`
-        }
+        } */
 
+        const pessoas = [
+            {nome: "Pablo", sobrenome: "henrique"},
+            {nome: "Maria", sobrenome: "Neide"},
+            {nome: "Tais", sobrenome: "Gessyca"},
+            {nome: "Tamara", sobrenome: "Pautilia"},
+            {nome: "Leonardo", sobrenome: "Teixeira"}
+        ]
+
+        const listaPessoas = document.getElementById("listaPessoas")
+
+        for(let i = 0; i < pessoas.length; i++){
+            listaPessoas.innerHTML += `<li> ${pessoas[i].nome}: ${pessoas[i].sobrenome}</li>`
+        }
         
     </script>
     
