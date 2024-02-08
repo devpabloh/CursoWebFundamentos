@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays e objetos</title>
+</head>
+<body>
+
+    <ul id="listaPessoas">
+        <!-- <li>Daniel: daniel@server.com</li>
+        <li>Maria: maria@server.com</li>
+        <li>João: joao@server.com</li> -->
+    </ul>
+
+    <script>
+        const pessoas = [
+            { nome: "Daniel", email: "daniel@server.com" },
+            { nome: "Maria", email: "Maria@server.com" },
+            { nome: "João", email: "joão@server.com" },
+            { nome: "Pablo", email: "pablo@server.com" },
+            { nome: "Luciane", email: "luciane@server.com" }
+        ]
+
+        const listaPessoas = document.getElementById("listaPessoas")
+
+        for(let i = 0; i < pessoas.length; i++){
+            listaPessoas.innerHTML += `<li> ${pessoas[i].nome}: ${pessoas[i].email}`
+        }
+
+        
+    </script>
+    
+</body>
+</html>
