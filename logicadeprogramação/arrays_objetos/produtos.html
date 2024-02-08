@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border: 2px solid black;
+
+        }
+
+        th+th, td +td {
+
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabela de produtos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Qualtidade em estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Caneta</td>
+                <td>R$ 2,00</td>
+                <td> 3 </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+
+        const produtos = [
+            {nome: "caneta", preco: 2, estoque: 3},
+            {nome: "Lapis", preco: 1.5, estoque: 3},
+            {nome: "Borracha", preco: 2, estoque: 3},
+            {nome: "Caderno", preco: 10, estoque: 3},
+            {nome: "Régua", preco: 5, estoque: 3}
+        ]
+
+        
+
+    </script>
+</body>
+</html>
