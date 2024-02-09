@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>informações de um aluno</h1>
+
+    <div id="output">
+
+    </div>
+
+    <script>
+        const aluno = {
+            nome: 'Daniel',
+            notas: [1,3,3,8]
+
+        }
+
+        const output = document.getElementById('output')
+
+        output.innerHTML = `<h2> Aluno: ${aluno.nome} </h2`
+        output.innerHTML += `<p> Notas:  </p>`
+        output.innerHTML += '<ul>'
+            let soma = 0
+        for(i = 0; i< aluno.notas.length; i++) {
+            soma += aluno.notas[i]
+            output.innerHTML += `<li> ${aluno.notas[i]} </li>`
+
+        }
+        let media = soma / aluno.notas.length
+        output.innerHTML += '</ul>'
+    </script>
+
+    
+</body>
+</html>
