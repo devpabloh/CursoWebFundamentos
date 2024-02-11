@@ -35,15 +35,17 @@
 
         output.innerHTML += `Media: ${media} </p>`
 
-        let aprovado = null
+        let aprovado = (media >= 7) ? "Você foi aprovado!" : "Você foi reprovado."
+
+      /*   let aprovado = null
 
         if(media >= 7) {
             aprovado = 'Sim'
         } else{
             aprovado = 'Não'
-        }
+        }*/
 
-        console.log(aprovado)
+        output.innerHTML += aprovado
     </script>
 
     
