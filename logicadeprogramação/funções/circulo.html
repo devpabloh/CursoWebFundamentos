@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área da circunfefência</title>
+</head>
+<body>
+
+    <h1>Área da circunferência</h1>
+
+    <label>
+        <input type="number" id="raio">
+    </label>
+    <button onclick="mostrarArea()"> Calcular á área</button>
+    <br>
+    <output id="output"></output>
+
+    <script>
+        let raio = document.getElementById("raio")
+        let output = document.getElementById("output")
+
+        function mostrarArea(){
+            let raioValue = parseFloat(raio.value)
+            const pi = Math.PI
+            let area = pi * raioValue ** 2
+
+            output.innerHTML = `A área da circunferência de raio ${raioValue} é ${area}`
+        }
+
+        
+    </script>
+    
+</body>
+</html>
