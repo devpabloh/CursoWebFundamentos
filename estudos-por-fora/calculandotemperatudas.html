@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de temperatura</title>
+</head>
+<body>
+<script>
+    // celsius é 293 a menos do que o kelvin
+    const kelvin = 293;
+    // conseguimos o valor de celsius diminuindo 273, da temperatura achada em kelvin
+    let celsius = kelvin - 273;
+    // chegamos no valor de fahrenheit através desse calculo
+    let fahrenheit = celsius * (9 / 5) + 32;
+
+    let newton = celsius * (33 / 100);
+    // Aqui fizemos com que o valor total fosse arredondado
+    fahrenheit = Math.floor(fahrenheit);
+
+    console.log(`A temperatura é de ${kelvin} graus Fahrenheit`)
+    console.log(`A temperatura é de ${celsius} graus Celsius`)
+    console.log(`A temperatura é de ${fahrenheit} graus Fahrenheit`);
+    console.log(`A temperatura é de ${newton} graus Newton`);
+</script>
+</body>
+</html>
