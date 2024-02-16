@@ -22,10 +22,20 @@
 
         function mostrarAreaDoPrompt(){
             let raioValue = parseFloat(prompt("digite um valor: "))
-            const pi = Math.PI
-            let area = pi * raioValue ** 2
+            mostrarArea(raioValue)
+        }
 
-            output.innerHTML = `A área de circunferência do raio ${raioValue} é ${area}`
+        function mostrarAreaDoInput() {
+            let raioValue = parseFloat(raio.value)
+            mostrarArea(raioValue) // string, number, boolean
+
+        }
+
+        function mostrarArea(raio){
+            const pi = Math.PI
+            let area = pi * raio** 2
+
+            output.innerHTML =  `A área da circunferência do raio ${raio} é ${area}`
         }
         
 
