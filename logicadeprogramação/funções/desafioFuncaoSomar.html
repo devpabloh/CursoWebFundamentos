@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,33 @@
             return n1 + n2
             
         }
-        console.log(somar(2,4))
+       /*  console.log(somar(2,4)) */
+
+       let resultado = somar(2, 4)
+       console.log(resultado)
+
+        function calcular(n1, n2, simbolo){
+            switch(simbolo){
+                case "+":
+                    return n1 + n2
+
+                case "-":
+                    return n1 - n2
+
+                case "/": 
+                    return n1 / n2
+
+                case "*": 
+                    return n1 * n2
+
+                default: 
+                    return null
+            }
+        }
+        console.log(calcular(2, 4, "+"))
+        console.log(calcular(2, 4, "-"))
+        console.log(calcular(2, 4, "/"))
+        console.log(calcular(2, 4, "*"))
     </script>
     
 </body>
