@@ -11,15 +11,28 @@
     <div id="output"></div>
     <script>
         let obj = {nome: 'Pablo', email: 'pablohenriqueadm94@gmail.com'}
-        document.getElementById('output').innerHTML = `nome: ${obj.nome}, Email: ${obj.email}`
-        function estudar (){
-
-        }
         try{
-
+            document.getElementById('output').innerHTML = `nome: ${obj.nome}, Email: ${obj.email}`  
         } catch (e) {
-
+            console.log(e)
+            console.log(e.message)
+            alert("Deu ruim!" + e.message)
+        } finally{
+            // alert("Fim do programa")
         }
+    </script>
+    <script src="areas.js">
+
+    </script>
+
+    <script>
+        try {
+            console.log(calcularAreaRetangulo(2, "sasdasdsa"))
+        }catch(e){
+            alert("Deu ruim" + e.message)
+        }
+        
+        alert("Fim do programa")
     </script>
 </body>
 </html>
