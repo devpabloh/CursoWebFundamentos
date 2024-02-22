@@ -47,8 +47,14 @@
         console.log(arr)
 
         function adicionarPromptEmObjeto(prop, valor, obj){
-            
+            if(obj[prop] === undefined){
+                obj[prop] = valor
+            }
         }
+
+        adicionarPropEmObjeto("sobrenome", "maria", obj)
+
+        console.log(obj)
     </script>
     
 
