@@ -29,6 +29,26 @@
         teste (n)
 
         console.log(`n externo`, n)
+
+        const arr = [1,2,3]
+        function adicionarNaArray (arr, valor){
+            arr[arr.length] = valor
+        }
+
+        function limparArray(arr){
+            arr.length = 0
+        }
+
+        console.log(arr)
+
+        limpaArray(arr)
+        adicionarNaArray("novo valor", arr)
+
+        console.log(arr)
+
+        function adicionarPromptEmObjeto(prop, valor, obj){
+            
+        }
     </script>
     
 
