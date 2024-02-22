@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos primitivos</h1>
+
+    <p>Em JavaScript, há dois tipos de dados possíveis: primitivos (passado por valores) e objetos(passado por referência)</p>
+
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+        <li>Symbol (ES2015)</li>
+    </ul>
+
+    <script>
+        let n = 10
+        function teste (n){
+            console.log(`n interno da função teste`, ++n)
+
+        }
+
+        teste (n)
+
+        console.log(`n externo`, n)
+    </script>
+    
+
+    <script>
+        function teste(n){
+            console.log(n)
+
+            console.log(++n) // ++ é como se você estivesse somando um e reatribuindo a mesma variavel, quando o ++ vem antes dá variavel é pré-encremento, quando vem após a váriavel é pós-incremento
+
+
+        }
+    </script>
+</body>
+</html>
