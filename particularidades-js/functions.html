@@ -27,11 +27,19 @@
             console.log(`Olá de function expressions, ${nome}`)
         }
 
-        const arr = [ola1, ola2, function(){console.log(`fFunção anônima dentro de um array executada`)}]
+        const arr = [ola1, ola2, function(){console.log(`Função anônima dentro de um array executada`)}]
 
         // Arrow function
 
-        
+        const ola3 = (nome) => {
+            console.log(`Olá de arrow function ${nome}`)
+        }
+        ola3("eu sou uma arrow function")
+
+        // toda vez que ver escrito dessa forma é porque é uma função de uma única linha, que retorna alguma coisa
+
+        const soma = (n1,n2) => (n1 + n2)
+        console.log(soma(7,3))
     </script>
     
 </body>
