@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+
+    <h1>Metodos</h1>
+
+    <!-- Uma função atrelada a uma propriedade de um objeto é o que chamamos de método -->
+
+    <script>
+        const produto = {
+            nome: 'caneta',
+            quantidade:10,
+            comprar: function (qtd){
+                if(qtd > this.quantidade){
+                    console.log(`quantidade insuficiente, quantidade disponível em estoque é ${this.quantidade}`)
+                    return null
+                }
+                console.log('comprar caneta')
+                this.quantidade -= qtd // A palavra This é uma referência ao produto
+            }
+            
+        }
+
+        console.log(produto)
+
+        // Quero comprar 3 canetas
+
+        // produto.quantidade = 7  primeira forma de fazer
+
+        produto.quantidade -= 3 // segunda forma de fazer
+
+        console.log(produto)
+
+        // Agora quero comprar 14 canetas
+        produto.quantidade -= 14
+        // Aqui podemos ver que a quantidade do objeto está -7, mas não tem como a gente vender -7 canetas, já que a gente não tinha essa quantidade em estoque
+        console.log(produto)
+
+        produto.quantidade = 10
+
+        produto.comprar(3)
+
+        console.log(produto)
+
+        produto.comprar(10)
+        console.log(produto)
+
+
+    </script>
+    
+</body>
+</html>
