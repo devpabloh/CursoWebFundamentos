@@ -1,4 +1,4 @@
 (function () {
-const txtEmail = document.getElementById("newsletterFeedback")
-console.log(txtEmail)
+const txtEmail = document.getElementById("txtEmail")
+
 })()
