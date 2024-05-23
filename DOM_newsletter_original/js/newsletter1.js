@@ -1,7 +1,7 @@
 
-const txtEmail = document.getElementById("txtEmail1")
+const txtEmail1 = document.getElementById("txtEmail1")
 
 function editarEmail(){
-    txtEmail.disabled = false
+    txtEmail1.disabled = false
 
 }
