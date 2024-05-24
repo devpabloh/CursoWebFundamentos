@@ -19,7 +19,7 @@
         <label for="contrato">Li e aceito o contrato</label>
         <input type="checkbox" name="" id="contrato">
         <textarea name="" cols="30" rows="10" id="" readonly>
-            
+            Este contrato...
         </textarea>
 
     </form>
@@ -28,8 +28,10 @@
     <script>
         const txtNome = document.querySelector("#txtNome")
         const txtEmail = document.getElementById("txtEmail")
+        const labelContrato = document.querySelector("label[for='contrato']")
         txtNome.value = "Pablo"
         txtNome.disabled = true
+        console.log(labelContrato)
 
         txtEmail.readOnly = true
 
