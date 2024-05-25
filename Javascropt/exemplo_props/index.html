@@ -21,7 +21,7 @@
         <textarea name="" cols="30" rows="10" id="" readonly>
             Este contrato...
         </textarea><br><br>
-        <input type="submit" value="cadastrar" id="inputCadastrar" disabled> 
+        <input type="submit" value="cadastrar" id="inputCadastrar"> 
 
     </form>
 
@@ -34,9 +34,11 @@
         txtNome.disabled = true
 
         txtEmail.readOnly = true
+        
 
         let inputContrato = document.getElementById("contrato")
         let inputCadastrar = document.getElementById("inputCadastrar")
+        inputCadastrar.disabled = true
 
         inputContrato.addEventListener("change", function(){
 
