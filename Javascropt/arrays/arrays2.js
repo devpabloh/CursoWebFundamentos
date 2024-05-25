@@ -9,7 +9,7 @@ console.log(arr.find(function(el){ // .find, vai retorna o primeiro item conform
     return el > 10
 }))
 
-console.log(arr.findIndex(function(el){ // .find, vai retorna o primeiro item conforme foi socilitado no return, se o mesmo não tiver no array, ele vai retornar undefined
+console.log(arr.findIndex(function(el){ // .find, vai retorna o primeiro item conforme foi socilitado no return, se o mesmo não tiver no array, ele vai retornar -1
     return el > 10
 }))
 
