@@ -32,18 +32,22 @@
         const labelContrato = document.querySelector("label[for='contrato']")
         txtNome.value = "Pablo"
         txtNome.disabled = true
-        console.log(labelContrato)
 
         txtEmail.readOnly = true
 
         let inputContrato = document.getElementById("contrato")
         let inputCadastrar = document.getElementById("inputCadastrar")
 
-        if(inputContrato.checked){
-            console.log("O contrato foi aceito")
-        }else{
-            console.log("o contrato não foi aceito")
-        }
+        inputContrato.addEventListener("change", function(){
+
+            if(this.checked){
+            inputCadastrar.disabled = false;
+             }else{
+            inputCadastrar.disabled = true;
+             }
+
+        });
+
 
 
 
