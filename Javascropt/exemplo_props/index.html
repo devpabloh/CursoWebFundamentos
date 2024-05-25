@@ -15,12 +15,13 @@
 
     <form action="#">
         <input type="text" id="txtNome" placeholder="nome"> <br>
-        <input type="text" id="txtEmail" placeholder="email">
+        <input type="text" id="txtEmail" placeholder="email"><br><br>
         <label for="contrato">Li e aceito o contrato</label>
-        <input type="checkbox" name="" id="contrato">
+        <input type="checkbox" name="" id="contrato"> <br><br>
         <textarea name="" cols="30" rows="10" id="" readonly>
             Este contrato...
-        </textarea>
+        </textarea><br><br>
+        <input type="submit" value="cadastrar" id="inputCadastrar" disabled> 
 
     </form>
 
@@ -34,6 +35,17 @@
         console.log(labelContrato)
 
         txtEmail.readOnly = true
+
+        let inputContrato = document.getElementById("contrato")
+        let inputCadastrar = document.getElementById("inputCadastrar")
+
+        if(inputContrato.checked){
+            console.log("O contrato foi aceito")
+        }else{
+            console.log("o contrato não foi aceito")
+        }
+
+
 
     </script>
 </body>
