@@ -53,5 +53,18 @@ let arr6 = Array(10,11,12,13,14,15)
 console.log(arr5)
 console.log(arr6.length)
 
-let arr7 = ["teucu"]
+let arr7 = [1,2,3,4,5,7,6,8]
 let arr8 = Array.from(arr7)
+console.log(arr8)
+
+// USO DO SPREAD OPERATOR (Operador de propagação) ...
+// pode ser usado para clonar Arrays
+// pode ser usado para juntar mais de um Array
+
+const originalArray = [1,2,3,4,5]
+const copiaArray = [...originalArray]
+console.log(copiaArray)
+
+const juntarArray = [...originalArray, ...copiaArray]
+
+console.log(juntarArray)
