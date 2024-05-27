@@ -44,3 +44,11 @@ const numerosUnicos = numeros.reduce(function(numerosUnicos, numerosAtuais){
 }, [])
 
 console.log(numerosUnicos)
+
+
+// USO DO .of() é usado para criar uma nova instância de Array com um número variável de elementos, independente do número ou do tipo de argumentos
+
+let arr5 = Array.of(1,2,3,4,5,6,7,8,9,10)
+let arr6 = Array(7)
+console.log(arr5)
+console.log(arr6.length)
