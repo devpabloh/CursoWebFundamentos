@@ -7,4 +7,40 @@ let soma = arr.reduce(function(acumulador, atual){ // O método .reduce(function
 
 console.log(soma)
 
+/* 
+
+nomesPorOrdem
+nomes
+nomeAtual
+primeiraLetra
+
+*/
+
 const nomes = [ "Pablo", "Thiago", "Deyvson", "David"]
+
+
+let nomesPorOrdem = nomes.reduce(function(nomes, nomeAtual){
+    let primeiraLetra = nomeAtual[0]
+
+    if(nomes[primeiraLetra]){
+        nomes[primeiraLetra]++
+
+    }else{
+        nomes[primeiraLetra] = 1
+    }
+    return nomes
+
+}, {})
+
+console.log(nomesPorOrdem)
+
+const numeros = [1,3,4,1,4,5,3,5,8,9]
+
+const numerosUnicos = numeros.reduce(function(numerosUnicos, numerosAtuais){
+    if(numerosUnicos.indexOf(numerosAtuais) < 0){
+        numerosUnicos.push(numerosAtuais)
+    }
+    return numerosUnicos
+}, [])
+
+console.log(numerosUnicos)
