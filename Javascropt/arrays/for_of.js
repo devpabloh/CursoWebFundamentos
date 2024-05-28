@@ -5,10 +5,10 @@ const obj = {
     email: "maria@server.com"
 }
 
-for(let prop in obj){ // usado para acessar diretamente as propriedades/chave de uma Array
+for(let prop in obj){ // O loop for of é usado para acessar diretamente as propriedades/chave de uma Array
     console.log(`${prop}: ${obj[prop]}`)
 }
 
-for(n of arr){ // usado para acessar diretamente os valores de uma Array
+for(n of arr){ // O loop for in é usado para acessar diretamente os valores de uma Array
     console.log(n)
 }
