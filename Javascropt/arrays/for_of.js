@@ -5,6 +5,10 @@ const obj = {
     email: "maria@server.com"
 }
 
-for(let prop in obj){
+for(let prop in obj){ // usado para acessar diretamente as propriedades/chave de uma Array
     console.log(`${prop}: ${obj[prop]}`)
+}
+
+for(n of arr){ // usado para acessar diretamente os valores de uma Array
+    console.log(n)
 }
