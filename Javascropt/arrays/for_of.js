@@ -9,6 +9,6 @@ for(let prop in obj){ // O loop for of é usado para acessar diretamente as prop
     console.log(`${prop}: ${obj[prop]}`)
 }
 
-for(n of arr){ // O loop for in é usado para acessar diretamente os valores de uma Array
+for(n of arr){ // O loop for in é  usado para acessar diretamente os valores de uma Array
     console.log(n)
 }
