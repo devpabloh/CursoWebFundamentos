@@ -30,11 +30,11 @@
         <thead>
           <tr>
               <th>Nome</th>
-              <th>Nota 1</th>
-              <th>Nota 2</th>
-              <th>Nota 3</th>
-              <th>Nota 4</th>
-              <th>Média</th>
+              <th aluno-nota="n1">Nota 1</th>
+              <th aluno-nota="n2">Nota 2 </th>
+              <th aluno-nota="n3">Nota 3</th>
+              <th aluno-nota="n4">Nota 4</th>
+              <th aluno-nota="media">Média</th>
               
           </tr>
         </thead>
@@ -138,7 +138,29 @@
       <script src="js/calc.js"></script>
       <script>
 
+      
+
+
         (function(){
+
+          function pegarIndice(indice){
+            const trHeader = document.querySelector('thead tr')
+            const thsHeader = trHeader.querySelector('th')
+
+            const th = trHeader.querySelector(`[aluno-nota=${indice}]`)
+
+            const i = Array.prototype.indexOf.call(thsHeader, th)
+            return i
+          }
+
+          const INDICES_NOTAS = {
+          n1: pegarIndice("n1"),
+          n2: pegarIndice("n2"),
+          n3: pegarIndice("n3"),
+          n4: pegarIndice("n4"),
+          media: pegarIndice("media")
+        }
+
           // Selecionamos através do querySelectorAll todas as tags tr que estão dentro do tbody
           const trs = document.querySelectorAll("tbody tr")
 
@@ -152,16 +174,16 @@
             const tds = trs[x].querySelectorAll('td')
             console.log(tds)
 
-            // aqui média recebe a função avarege(), que está sendo passado também os parametros necessários para a mesma realizar o calculo da médoa.
+            // aqui média recebe a função avarege(), que está sendo passado também os parametros necessários para a mesma realizar o calculo da média e transformando eles em números reais.
             media = avarege(
-              parseFloat(tds[1].textContent),
-              parseFloat(tds[2].textContent),
-              parseFloat(tds[3].textContent),
-              parseFloat(tds[4].textContent) 
+              parseFloat(tds[INDICES_NOTAS.n1].textContent),
+              parseFloat(tds[INDICES_NOTAS.n2].textContent),
+              parseFloat(tds[INDICES_NOTAS.n3].textContent),
+              parseFloat(tds[INDICES_NOTAS.n4].textContent) 
             )
             x++
             //aqui estamos colocando o resultado da média na td localizada na posição 5
-            tds[5].textContent = media
+            tds[INDICES_NOTAS.media].textContent = media
           }
         })()
 
