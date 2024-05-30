@@ -13,6 +13,14 @@
         .underlined{
           border-bottom: 3px solid currentColor;
         }
+
+        .reproved{
+          background-color: rgba(255, 0, 0, 0.689);
+        }
+
+        .aproved{
+          background-color: rgb(47, 255, 64);
+        }
       </style>
     </head>
 
@@ -26,7 +34,7 @@
         </div>
         <h2 class="materialize-red-text text-lighten-2 underlined">Dados de Alunos</h2>
 
-        <table class="striped">
+        <table>
         <thead>
           <tr>
               <th>Nome</th>
@@ -156,19 +164,16 @@
           ];
 
           alunos.forEach(aluno=>{
-            aluno.media = avarege(...aluno.notas) // Aqui foi usado o operador Spread, que são os ..., que nesse caso aqui estamos usando para copiar o Array, alunos.nota, mas também podemos usar para expandir, copiar e combinar Arrays e expandir objetos.
+           // aluno.media = avarege(...aluno.notas)  Aqui foi usado o operador Spread, que são os ..., que nesse caso aqui estamos usando para copiar o Array, alunos.nota, mas também podemos usar para expandir, copiar e combinar Arrays e expandir objetos.
+            aluno.media = avarege.apply(null, aluno.notas)
 
-            
           })
 
           const html = alunos.map( aluno=>
             `
-            <tr>
+            <tr class ="${aluno.media > 7 ? "aproved" : "reproved"}">
               <td>${aluno.nome}</td>
-              <td>${aluno.notas[0]}</td>
-              <td>${aluno.notas[1]}</td>
-              <td>${aluno.notas[2]}</td>
-              <td>${aluno.notas[3]}</td>
+              ${aluno.notas.map(n => `<td> ${n} </td>`).join("")}
               <td>${aluno.media}</td>
             </tr>
 
