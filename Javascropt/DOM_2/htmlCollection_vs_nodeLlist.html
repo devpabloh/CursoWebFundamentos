@@ -15,6 +15,14 @@
             <li></li>
         </ul>
     </div>
+
+    <script>
+        const nodeList = document.querySelectorAll("#list li") // Todo .querySelectorAll() devolve uma nodelist(lista de nós), que é uma coleção ordenada de nós extraídos de um documento. podendo ser o resultado de métodos como document.querySelectorAll() ou .getElementsByClassName(). E diferente do array a NodeList não possuí todos os métodos de Array, mas pode ser iterada com loop for ou forEach(), se for uma nodeList estática.
+        const collection = document.getElementById("list").getElementsByTagName("li")
+
+        console.log(nodeList)
+        console.log(collection)
+    </script>
     
 </body>
 </html>
