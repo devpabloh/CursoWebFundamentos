@@ -27,8 +27,14 @@
     </div>
     <script>
         console.log(document.body)
-        console.log(document.parentElement)
-        console.log(document.parentNode)
+        console.log(document.body.parentElement)
+        console.log(document.body.parentNode)
+        const html = document.body.parentElement
+
+        console.log(document.body.parentElement === document.body.parentNode)
+
+        console.log(html.parentElement)
+        console.log(html.parentNode)
     </script>
 </body>
 </html>
