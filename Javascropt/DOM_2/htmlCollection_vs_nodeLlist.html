@@ -8,21 +8,83 @@
 <body>
     <div class="container">
         <ul id="list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
         </ul>
     </div>
 
     <script>
         const nodeList = document.querySelectorAll("#list li") // Todo .querySelectorAll() devolve uma nodelist(lista de nós), que é uma coleção ordenada de nós extraídos de um documento. podendo ser o resultado de métodos como document.querySelectorAll() ou .getElementsByClassName(). E diferente do array a NodeList não possuí todos os métodos de Array, mas pode ser iterada com loop for ou forEach(), se for uma nodeList estática.
-        const collection = document.getElementById("list").getElementsByTagName("li")
+        const collection = document.getElementById("list").getElementsByTagName("li") // É vivo, ou seja, ela é automaticamente atualiza quando os elementos do documento DOM(document Object Model), são adicionados ou removidos. diferente do nodeList que é estático, uma vez colocado os números ele não atualiza. Ele também possuí alguns métodos específicos, como o length.
+
+        console.log(nodeList)
+        console.log(collection)
+
+        document.querySelector("#list").innerHTML += "<li> Item 6 </li>"
 
         console.log(nodeList)
         console.log(collection)
     </script>
+
+    <!-- 
+
+        Navegar entre os nós
+        node.parentNode
+        node.parentElement
+        node.nextSibling - pegue o próximo irmão
+        node.previousSibling -pegue o irmão anterior
+        node.childNodes
+        node.children
+        node.firstChild
+        node.firstElementChild
+        node.lastChild
+        node.lastElementChild
+        node.hasChildNodes()
+
+        COMO ADICIONAR NÓS
+        
+        parentBode
+            parentNode.prepend() adiciona antes/inicio
+            parentNode.append() adiciona depois/final
+
+        Node
+            node.appendChild()
+            node.insertBefore()
+            node.cloneNode()
+
+        ChildNode
+            childNode.after()
+            childNode.before()
+
+        USANDO O ELEMENTO
+
+        element.
+            element.insertAdjacentElement()
+            element.insertAdjacentHTML()
+            element.insertAdjacentText()
+        
+        COMO REMOVER NÓS
+
+        node.
+            node.replaceChild() - substitui um filho por outro
+            node.removeChild()
+
+        childNode.
+            childNode.remove() - cuidado ao usar esse, ele não funciona o internet explode
+        
+        COMO CRIAR NÓS
+
+        document.
+            document.creatElement()
+            document.creatAttribute()
+            document.creatTextNode()
+            document.write()
+        
+
+     -->
     
 </body>
 </html>
