@@ -41,8 +41,18 @@
 
         /* title.textContent = "titulo criado com textContent" */
         /* document.body.appendChild(title) */ 
-        document.body.appendChild(title)
+        /* document.body.appendChild(title) */
+        /* document.querySelector(".container").appendChild(title)  //adiciona ao final */
+        document.querySelector('.container').append(title)
 
+        /* 
+        
+        Lembrando que os métodos append() e appendChild() são métodos para adicionar elementos, inserindo novos nós no DOM, mas existe diferenças entre eles, que são as seguintes: 
+        appenChild() adiciona um nó(node) como o último filho de um nó pai, aceita apenas objetos do tipo nó(node), retorna o nó adicionado e é suportado por todos os navegadores.
+        append() Adiciona um ou mais nós ou strings como filhos de um nó pai. Pode adicionar múltiplos itens de uma vez. Aceita objetos do tipo nó(node) e strings (as strings são adicionadas como nós de texto). Não retorna nada (Undefined). Pode não ser suportado por versões mais antigas de navegadores.
+        prepend() adiciona um ou mais nós ou strings como os primeiros filhos de um nó pai. Aceita objetos do tipo nó(node) e strings (as strings são adicionadas como nós de texto). Não retorna nada(undefined), não tem compatibilidade com todos os navegadores.
+
+        */
         
         
         // testando como faz
