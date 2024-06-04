@@ -26,7 +26,17 @@
         </ul>
     </div>
     <script>
-        
+        const title = document.createElement("h1")
+        const atributo = document.createAttribute("id")
+        atributo.value = "titulo1"
+        title.setAttributeNode(atributo)
+        console.log(title)
+
+        const title2 = document.createElement("p")
+        const atributo2 = document.createAttribute("class")
+        atributo2.value = "Tentei"
+        title2.setAttributeNode(atributo2)
+        console.log(title2)
     </script>
 </body>
 </html>
