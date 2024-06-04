@@ -26,12 +26,26 @@
         </ul>
     </div>
     <script>
-        const title = document.createElement("h1")
-        const atributo = document.createAttribute("id")
-        atributo.value = "titulo1"
-        title.setAttributeNode(atributo)
+        const title = document.createElement("h1") //criamos um elemento
+        const atributo = document.createAttribute("id") // criamos um atributo
+        atributo.value = "titulo1"  //atribuimos um valor para esse atributo
+        title.setAttributeNode(atributo) // aqui usamos os setAttributeNode() para adicionar o nó de atributo ao elemento HTML
+
+        title.setAttribute("title","Title inserido dinamicamente setAttribute") //podemos criar também usando o setAttribute
+        title.setAttribute("style","color: red;")
+
+        const text = document.createTextNode("Criar nós no dom") // Aqui criamos um nó do tipo texto
+        title.appendChild(text) // aqui usamos .appendChild para criar um filho no h1(title), que é o nó de texto (text)
         console.log(title)
 
+
+        /* title.textContent = "titulo criado com textContent" */
+        /* document.body.appendChild(title) */ 
+        document.body.appendChild(title)
+
+        
+        
+        // testando como faz
         const title2 = document.createElement("p")
         const atributo2 = document.createAttribute("class")
         atributo2.value = "Tentei"
