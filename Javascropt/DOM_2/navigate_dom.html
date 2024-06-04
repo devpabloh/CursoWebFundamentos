@@ -39,8 +39,34 @@
 
 
         const h2 = document.querySelector("h2")
-        const h2previousSibling = h2.nextElementSibling
+        const h2nextSibling = h2.nextElementSibling
+        h2nextSibling.style.background = 'Green'
+
         console.log(h2.nextElementSibling) //pegar o elemento irmão mais próximo
+
+        /* 
+        
+        PROPRIEDADES E MÉTODO
+            ChildNodes - nós filhos
+            Children - filhos
+            firstChild - primeiro filho
+            firstElementChild - primeiro elemento filho
+            lastChild - último filho
+            lastElementChild - último elemento filho
+            hasChildNodes() - tem nós filhos (único método dessa lista, o restante são propriedades)
+        
+        */
+
+        const link = document.querySelector("a")
+        const list = document.querySelector("ul ul")
+
+        console.log(link)
+
+        console.log(link.parentElement.childNodes) // retorna uma node list (estática) com todos os nós filhos, independente do tipo do nó
+        console.log(list.parentElement.children) // retorna um html collection (viva) com os nós filhos que são do tipo elementos 
+
+        console.log(link.parentElement)
+
     </script>
 </body>
 </html>
